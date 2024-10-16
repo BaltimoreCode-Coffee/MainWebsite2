@@ -9,6 +9,7 @@
 
 footer{
     border-top: dotted 1px #e9ecef;
+    background-color: #240D57
 }
 
 .social-list{
@@ -17,6 +18,30 @@ footer{
     align-items: center;
     list-style: none;
     
+}
+
+.social-icon{
+   padding: 15px;
+   color: purple;
+   font-size: 25px;
+}
+
+
+.social-icon:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.copyright{
+    color: white;
+    font-size: 15px;
 }
 
 .menus{
