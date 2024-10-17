@@ -1,62 +1,97 @@
-.bottom-half{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    border-top: 1px dotted #e9ecef;
-    height: 50px;
+.bottom-half {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-top: 1px dotted #e9ecef;
+  height: 50px;
 }
 
-footer{
-    border-top: dotted 1px #e9ecef;
-    background-color: #240D57
-}
-
-.social-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    
-}
-
-.social-icon{
-   padding: 15px;
-   color: purple;
-   font-size: 25px;
+footer {
+  border-top: dotted 1px #e9ecef;
+  background-color: #240d57;
 }
 
 
-.social-icon:hover{
+
+.email a{
     color: white;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.email a:hover{
+    color: purple;
     transition: 0.3s;
 }
 
-.footer-links{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
 
-.copyright{
-    color: white;
-    font-size: 15px;
+.social-icon {
+  padding: 15px;
+  color: purple;
+  font-size: 25px;
 }
 
-.menus{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.social-icon:hover {
+  color: white;
+  transition: 0.3s;
 }
 
-li{
-    list-style: none;
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
 }
 
-.mini-menu{
-    display: block;
-    align-items: center;
-    list-style: none;
+.footer-links ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.footer-links li {
+  margin: 0 10px;
+  font-size: 23px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+ 
+}
+
+.footer-links a:hover {
+  color: purple;
+  transition: 0.3s;
+}
+
+.copyright {
+  color: white;
+  font-size: 15px;
+}
+
+.menus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.mini-menu {
+  display: block;
+  align-items: center;
+  list-style: none;
 }
