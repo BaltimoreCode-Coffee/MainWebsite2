@@ -4,28 +4,40 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMeetup,
   faLinkedin,
-  faSlack
+  faSlack,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import logo from "../../assets/whitetranslogo.png";
 
 function Footer() {
   return (
     <footer>
-      <div className="footer-logo">
-        <span className="email"><a href="">bmorecodecoffee@gmail.com</a></span>
-      </div>
-      <div className="footer-links">
-        <ul>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/events">Events</Link>
-          </li>
-          <li>
-            <Link to="/resources">Volunteer</Link>
-          </li>
+      <section className="top-half">
+        <div className="footer-logo-container">
+          <img
+            src={logo}
+            id="footer-logo"
+            alt="Baltimore Code and Coffee logo"
+          />
+          <span className="email">
+            <FontAwesomeIcon id="envelope" icon={faEnvelope} />{" "}
+            <a href=""> bmorecodecoffee@gmail.com</a>
+          </span>
+        </div>
+        <div className="footer-links">
+          <ul>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/events">Events</Link>
+            </li>
+            <li>
+              <Link to="/resources">Volunteer</Link>
+            </li>
           </ul>
-      </div>
+        </div>
+      </section>
       {/* <div className="menus">
       <div className="mini-menu" id="events">
         <h4>Event</h4>
@@ -49,26 +61,38 @@ function Footer() {
             </ul>
         </div> 
       </div> */}
-      
-        
-      <div className="bottom-half"> 
-        <p className="copyright">© 2024 Baltimore Code and Coffee All rights reserved.</p>
+
+      <div className="bottom-half">
+        <p className="copyright">
+          © 2024 Baltimore Code and Coffee All rights reserved.
+        </p>
         <ul className="social-list">
           <li>
-            {" "}
-            <a href="https://www.linkedin.com/company/baltimore-code-coffee/"><FontAwesomeIcon className="social-icon" icon={faLinkedin} /></a>
+            <a
+              href="https://www.linkedin.com/company/baltimore-code-coffee/"
+              className="social-button"
+            >
+              <FontAwesomeIcon className="social-icon" icon={faLinkedin} />
+            </a>
           </li>
           <li>
-            {" "}
-            <a href="https://baltimoretech.slack.com/archives/CTDNSM6EP"><FontAwesomeIcon className="social-icon" icon={faSlack} /></a>
-          </li>  
+            <a
+              href="https://baltimoretech.slack.com/archives/CTDNSM6EP"
+              className="social-button"
+            >
+              <FontAwesomeIcon className="social-icon" icon={faSlack} />
+            </a>
+          </li>
           <li>
-            {" "}
-            <a href="https://www.meetup.com/baltimore-code-and-coffee"><FontAwesomeIcon className="social-icon" icon={faMeetup} /></a>
+            <a
+              href="https://www.meetup.com/baltimore-code-and-coffee"
+              className="social-button"
+            >
+              <FontAwesomeIcon className="social-icon" icon={faMeetup} />
+            </a>
           </li>
         </ul>
       </div>
-     
     </footer>
   );
 }

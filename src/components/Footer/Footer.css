@@ -1,17 +1,40 @@
+footer{
+  margin-top: 50px;
+}
+
+.top-half {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: 50px
+} 
+
 .bottom-half {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  border-top: 1px dotted #e9ecef;
+  border-top:  1px inset #e9ecef;
   height: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
-footer {
-  border-top: dotted 1px #e9ecef;
-  background-color: #240d57;
-}
 
+#footer-logo {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 200px;
+} 
+
+#envelope {
+color: purple
+}
 
 
 .email a{
@@ -27,20 +50,36 @@ footer {
 
 .social-list {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center the items horizontally */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.social-list li {
+  margin: 0 10px; /* Add some space between the items */
+}
+
+.social-button {
+  display: flex;
   align-items: center;
-  list-style: none;
+  justify-content: center;
+  width: 30px; /* Set the width of the button */
+  height: 30px; /* Set the height of the button */
+  border-radius: 50%; /* Make the button rounded */
+  background-color: #6922ac; /* Set the background color */
+  color: gray; /* Set the icon color */
+  text-decoration: none; /* Remove underline from links */
+  transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+.social-button:hover {
+  background-color: grey; /* Change background color on hover */
+  color: #6922ac
 }
 
 .social-icon {
-  padding: 15px;
-  color: purple;
-  font-size: 25px;
-}
-
-.social-icon:hover {
-  color: white;
-  transition: 0.3s;
+  font-size: 17px; /* Set the icon size */
 }
 
 .footer-links {
@@ -48,6 +87,7 @@ footer {
   justify-content: flex-end;
   align-items: center;
   list-style: none;
+ 
 }
 
 .footer-links ul {
@@ -62,10 +102,11 @@ footer {
 .footer-links li {
   margin: 0 10px;
   font-size: 23px;
+  
 }
 
 .footer-links a {
-  color: white;
+  color: grey;
   text-decoration: none;
  
 }
@@ -76,7 +117,7 @@ footer {
 }
 
 .copyright {
-  color: white;
+  color: grey;
   font-size: 15px;
 }
 
