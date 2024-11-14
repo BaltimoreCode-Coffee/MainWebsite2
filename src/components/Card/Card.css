@@ -1,4 +1,4 @@
-.blog-card {
+.card {
     width: 296px;
     height: 391px;
     border-radius: 10px;
@@ -11,4 +11,21 @@
     justify-content: center;
     padding: 20px;
     margin: 10px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-tag {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.card-desc {
+    font-size: 16px;
+    color: #333;
 }

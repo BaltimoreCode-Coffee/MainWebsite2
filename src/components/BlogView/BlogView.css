@@ -1,10 +1,47 @@
+h3{
+    color: white;
+    
+}
+
+.blog-view-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh; /* Ensure it takes the full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .blog-view {
     display: flex;
-    flex-direction: row; /* Change to row for horizontal layout */
-    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
-    justify-content: center; /* Center the cards horizontally */
+    flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 1300px;
     margin-top: 50px;
     margin-bottom: 50px;
-    
+}
+
+.blog-view-desc {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
