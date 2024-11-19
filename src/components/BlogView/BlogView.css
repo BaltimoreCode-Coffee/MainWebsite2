@@ -1,5 +1,12 @@
-h3{
+h2{
     color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+h3{
+    color: grey;
     
 }
 
@@ -17,8 +24,8 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    max-width: 1300px;
+    width: 1262px;
+    height: 825px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -33,9 +40,9 @@ h3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px;
-    width: 100%;
-    max-width: 1300px;
+    grid-gap: 10px;
+    width: 80%;
+   
     margin-top: 20px;
 }
 
@@ -44,4 +51,22 @@ h3{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.blog-view-footer{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.blog-view-footer-link{
+    color: white;
+}
+
+.blog-view-footer-link:hover{
+    text-decoration: underline;
+    color: grey;
+    transition: 0.3s;
 }
