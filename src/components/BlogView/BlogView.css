@@ -35,7 +35,7 @@ h3{
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 20px;
     width: 100%;
-    max-width: 800px;
+    max-width: 1300px;
     margin-top: 20px;
 }
 

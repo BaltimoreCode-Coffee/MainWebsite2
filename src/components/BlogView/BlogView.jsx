@@ -30,6 +30,9 @@ export default function BlogView() {
                         <BlogCard />
                     </div>
                 </div>
+                <div className="blog-view-footer">
+                    <a href="/blog" className="blog-view-footer-link">View All Posts</a>
+                </div>
             </div>
         </div>
     );
