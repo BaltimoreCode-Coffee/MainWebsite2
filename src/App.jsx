@@ -8,6 +8,7 @@ import EventCal from "./components/EventCal/EventCal";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Blog from "./components/Blog/Blog";
 import Volunteer from "./components/Volunteer/Volunteer";
+import Organizers from './components/Organizers/Organizers'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/volunteer" element={<Volunteer />} />
+        <Route path="/oganizers" element={<Organizers />} />
       </Routes>
     </Router>
   );

@@ -2,7 +2,7 @@
 import "../DropdownMenu/DropdownMenu";
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
 import logo from "../../assets/BCC_logo.png";
-import HamburgerMenuIcon from "@mui/icons-material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
 import EventCalIcon from "../../assets/event_cal_icon.svg";
 import EventTypeIcon from "../../assets/event_type_icon.svg";
 
@@ -97,7 +97,7 @@ function Navbar() {
         <DropdownMenu
           buttonId="mobileNavEventsButton"
           menuId="mobileNavEventsMenu"
-          buttonIcon={<HamburgerMenuIcon fontSize="large" />}
+          buttonIcon={<MenuIcon fontSize="large" />}
           menuItems={[
             {
               name: "Event",

@@ -1,0 +1,34 @@
+.organizers {
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 52px;
+}
+
+.organizers h2,
+.organizers__desc {
+    text-align: center;
+    color: var(--primary-white);
+}
+
+.organizers h2 {
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: Raleway;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 26px;
+}
+
+.organizers__desc {
+    font-family: var(--secondary-font);
+}
+
+.organizers__tiles {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    min-width: 95%;
+}

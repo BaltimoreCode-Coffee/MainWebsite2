@@ -1,0 +1,47 @@
+.organizer-card {
+    border: solid 3px #412157;
+    height: 600px;
+    width: 500px;
+}
+
+.organizer-card h3 {
+    font-weight: 400;
+}
+
+.organizer-card__top{
+    background-color: var(--secondary-purple);
+    padding: 0px 28px;
+}
+
+.organizer-card__img {
+    height: 350px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.organizer-card__bottom{
+    background-color: var(--primary-white);
+    height: 200px;
+    padding: 15px;
+}
+
+.organizer-card__name{
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.organizer__desc{
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 12px;
+}
