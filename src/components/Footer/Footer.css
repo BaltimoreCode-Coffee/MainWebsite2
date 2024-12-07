@@ -1,5 +1,7 @@
 footer{
+  background-color: #30123B;
   margin-top: 50px;
+  font-family: U;
 }
 
 .top-half {
@@ -7,8 +9,8 @@ footer{
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  height: 50px;
-  padding-left: 150px;
+  height: 170px;
+  padding-left: 105px;
   padding-right: 150px;
   margin-bottom: 50px
 } 
@@ -20,7 +22,7 @@ footer{
   padding: 0 20px;
   border-top:  1px inset #e9ecef;
   height: 50px;
-  padding-left: 150px;
+  padding-left: 105px;
   padding-right: 150px;
 }
 
@@ -30,11 +32,14 @@ footer{
   align-items: center;
   height: 100px;
   width: 200px;
+  margin-top: 50px;
+  margin-bottom: 25px;
 } 
 
 #envelope {
 color: purple
 }
+
 
 
 .email a{
@@ -87,7 +92,7 @@ color: purple
   justify-content: flex-end;
   align-items: center;
   list-style: none;
- 
+  padding-bottom: 85px; 
 }
 
 .footer-links ul {
@@ -100,7 +105,7 @@ color: purple
 }
 
 .footer-links li {
-  margin: 0 10px;
+  margin: 0 70px;
   font-size: 23px;
   
 }
