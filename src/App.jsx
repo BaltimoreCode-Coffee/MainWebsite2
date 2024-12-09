@@ -7,6 +7,7 @@ import EventTypes from "./components/EventTypes/EventTypes";
 import EventCal from "./components/EventCal/EventCal";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Blog from "./components/Blog/Blog";
+import Footer from "./components/Footer/Footer";
 import Volunteer from "./components/Volunteer/Volunteer";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/volunteer" element={<Volunteer />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
