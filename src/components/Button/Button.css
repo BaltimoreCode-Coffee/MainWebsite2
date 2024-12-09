@@ -1,0 +1,14 @@
+.button {
+  padding: 8px 17px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #9857d3;
+  border: none;
+  color: #f4f0ff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-family: var(--secondary-font);
+  line-height: 1;
+}

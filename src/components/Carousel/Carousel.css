@@ -1,0 +1,137 @@
+.carousel {
+    margin: 86px -30px 100px;
+}
+li.splide__slide:hover{
+    background: linear-gradient( rgba(255, 255, 255, 0), rgba(78, 0, 110, .9));
+    border: 1px solid var(--primary-white);
+    .slide-buttons{
+        visibility: visible;
+    }
+} 
+.carousel img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+    pointer-events: all;
+}
+
+.splide__track{
+    height: 395px;
+}
+.slide-label{
+    color: var(--primary-white);
+    font-family: var(--tertiary-font);
+    pointer-events: none;
+    margin-top:-8px;
+}
+.slide-buttons{
+    visibility: hidden;
+    display:flex;
+    position: relative;
+    top: -40px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.slide-buttons a{
+    color: var(--primary-white);
+    background-color: rgba(255,255,255,0.3);
+    font-family: var(--tertiary-font);
+    text-decoration: none;
+    cursor: pointer;
+    pointer-events: all;
+    padding: 4px 16px;
+}
+.slide-buttons a:hover{
+    background-color: rgba(255,255,255,0.5);;
+}
+.view-events-btn a{
+    border-radius: 20px;
+}
+.about-btn a{
+    border-radius: 3px;;
+}
+.splide:not(.is-overflow) .splide__pagination,
+.splide__pagination{
+    display: flex;
+    position:relative;
+    top: 40px;
+    gap: 12px;
+}
+.splide__pagination__page {
+    background: #ccc;
+    border: 0;
+    border-radius: 50%;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: 0px;
+    opacity: .7;
+    padding: 0;
+    position: relative;
+    transition: transform .2s linear;
+}
+.splide__pagination__page {
+    background: transparent;
+    transform: scale(.8);
+    z-index: 1;
+    border: 1px solid var(--primary-white);
+    display: flex;
+}
+.splide__pagination__page.is-active{
+    background-color: transparent;
+    transform: scale(1);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AF69EE;
+}
+.splide__pagination__page.is-active::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #AF69EE;
+
+}
+
+button.custom.splide__arrow{
+    visibility: visible;
+    height: 65px;
+    top: 42%;
+    background-color: transparent;
+}
+
+.arrow{
+    width: 3px;
+    height: 40px;
+    background-color: #fff;
+    position: relative;
+}
+.arrow.prev-arrow.one{
+    transform: rotate(37deg);
+    top: -18px
+}
+.arrow.prev-arrow.two{
+    transform: rotate(323deg);
+    top: 13px;
+    left: -2px;
+}
+.arrow.next-arrow.one{
+    transform: rotate(-37deg);
+    top: -18px
+}
+.arrow.next-arrow.two{
+    transform: rotate(-323deg);
+    top: 12px;
+    left: -2px;
+}
+@media screen and (max-width: 640px){
+    .slide-buttons{
+        visibility: visible;
+        a{
+            background-color: var(--secondary-purple);
+            opacity: .9;
+        }
+    }
+}
