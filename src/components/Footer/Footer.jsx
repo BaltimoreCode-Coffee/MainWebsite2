@@ -38,7 +38,7 @@ function Footer() {
           </ul>
         </div>
       </section>
-      {/* <div className="menus">
+      <div className="menus">
       <div className="mini-menu" id="events">
         <h4>Event</h4>
         <ul>
@@ -60,7 +60,7 @@ function Footer() {
                 <li>Join us</li>
             </ul>
         </div> 
-      </div> */}
+      </div>
 
       <div className="bottom-half">
         <p className="copyright">
