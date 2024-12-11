@@ -40,9 +40,9 @@ h3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
-    width: 80%;
-   
+    grid-gap: 1px;
+    width: 101%;
+    
     margin-top: 20px;
 }
 
@@ -59,10 +59,13 @@ h3{
     text-align: left;
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 110px;
 }
 
 .blog-view-footer-link{
-    color: white;
+    font-family: Raleway;
+    color: #BCA9E9;
 }
 
 .blog-view-footer-link:hover{

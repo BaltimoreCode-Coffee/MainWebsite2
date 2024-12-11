@@ -1,5 +1,5 @@
 .card {
-    width: 196px;
+    width: 256px;
     height: 291px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -7,15 +7,16 @@
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the image horizontally */
-    padding: 20px;
+    padding: 0 20px 40px 20px;
     margin: 10px;
 }
 
 .card-image {
-    width: 100%;
-    height: 150px;
+    width: 300px;
+    height: 200px;
     background-size: cover;
     background-position: center;
+    padding-bottom: 25px;
     margin-bottom: 10px;
 }
 

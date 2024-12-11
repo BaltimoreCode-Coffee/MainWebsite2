@@ -1,11 +1,12 @@
 
+import BlogImage from "../../assets/BlogPlaceHolder.jpg";
 import "./Card.css";
 
 export default function Card({ title, tag, desc }) {
   return (
     <div className="card">
       <img
-        src="https://via.placeholder.com/150"
+        src={BlogImage}
         alt="Placeholder"
         className="card-image"
       />

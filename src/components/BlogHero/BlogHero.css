@@ -1,6 +1,9 @@
 .blog-hero {
-  width: 460px;
-  height: 291px;
+  background-image: url('D:\Projects\Personal Projects\BCC\BCCFutureSite\src\assets\BlogPlaceholder.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 576px;
+  height: 296px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   background-color: #fff;
@@ -17,7 +20,7 @@
 
 .title {
   font-size: 24px;
-  color: #333;
+  color: white;
   font-weight: 600;
   margin-bottom: 10px;
   margin-top: 80px;
