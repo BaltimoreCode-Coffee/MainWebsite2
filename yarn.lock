@@ -662,10 +662,10 @@
   "resolved" "https://registry.npmjs.org/@remix-run/router/-/router-1.19.2.tgz"
   "version" "1.19.2"
 
-"@rollup/rollup-win32-x64-msvc@4.21.3":
-  "integrity" "sha512-fOvu7PCQjAj4eWDEuD8Xz5gpzFqXzGlxHZozHP4b9Jxv9APtdxL6STqztDzMLuRXEc4UpXGGhx029Xgm91QBeA=="
-  "resolved" "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.21.3.tgz"
-  "version" "4.21.3"
+"@rollup/rollup-win32-x64-msvc@4.24.0":
+  "integrity" "sha512-fbMkAF7fufku0N2dE5TBXcNlg0pt0cJue4xBRE2Qc5Vqikxr4VCgKj/ht6SMdFcOacVA9rqF70APJ8RN/4vMJw=="
+  "resolved" "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.24.0.tgz"
+  "version" "4.24.0"
 
 "@splidejs/react-splide@^0.7.12":
   "integrity" "sha512-UfXH+j47jsMc4x5HA/aOwuuHPqn6y9+ZTNYPWDRD8iLKvIVMZlzq2unjUEvyDAU+TTVPZOXkG2Ojeoz0P4AkZw=="
