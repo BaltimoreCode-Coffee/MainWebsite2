@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import DropdownMenu from "../DropdownMenu/DropdownMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMeetup,
@@ -8,6 +9,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import logo from "../../assets/whitetranslogo.png";
+import EventCalIcon from "../../assets/event_cal_icon.svg";
+import EventTypeIcon from "../../assets/event_type_icon.svg";
 
 function Footer() {
   return (
@@ -21,47 +24,58 @@ function Footer() {
           />
           <span className="email">
             <FontAwesomeIcon id="envelope" icon={faEnvelope} />{" "}
-            <a href=""> bmorecodecoffee@gmail.com</a>
+            <a href="mailto:bmorecodecoffee@gmail.com"> bmorecodecoffee@gmail.com</a>
           </span>
         </div>
         <div className="footer-links">
           <ul>
             <li>
-              <Link to="/about">About Us</Link>
+              <Link to="/about-us">About Us</Link>
             </li>
             <li>
-              <Link to="/events">Events</Link>
+              <DropdownMenu
+              className="footer-events"
+                buttonId="footerEventsButton"
+                menuId="footerEventsMenu"
+                buttonTitle="Event"
+                menuItems={[
+                  {
+                    name: "Type of Events",
+                    id: "footerEventType",
+                    handleClick: () => {
+                      window.location.href = "/event-types";
+                    },
+                    icon: EventTypeIcon,
+                  },
+                  {
+                    name: "Event Calendar",
+                    id: "footerEventCalendar",
+                    handleClick: () => {
+                      window.location.href = "/event-calendar";
+                    },
+                    icon: EventCalIcon,
+                  },
+                ]}
+              />
             </li>
             <li>
-              <Link to="/resources">Volunteer</Link>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <a
+                href="https://hcb.hackclub.com/donations/start/baltimore-code-and-coffee"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sponsor
+              </a>
+            </li>
+            <li>
+              <Link to="/volunteer">Volunteer</Link>
             </li>
           </ul>
         </div>
       </section>
-      {/* <div className="menus">
-      <div className="mini-menu" id="events">
-        <h4>Event</h4>
-        <ul>
-          <li>Placeholder</li>
-          <li>Placeholder</li>  
-        </ul>
-      </div>
-      <div className="mini-menu" id="resources">
-        <h4>About Us</h4>
-        <ul>
-          <li>Our Story</li>
-          <li>Our Works</li>
-        </ul>
-      </div>
-        <div className="mini-menu" id="Volunteer">
-            <h4>Volunteer</h4>
-            <ul>
-                <li>FAQs</li>
-                <li>Join us</li>
-            </ul>
-        </div> 
-      </div> */}
-
       <div className="bottom-half">
         <p className="copyright">
           © 2024 Baltimore Code and Coffee All rights reserved.
