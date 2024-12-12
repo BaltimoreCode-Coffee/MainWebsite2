@@ -1,5 +1,5 @@
 import "./Footer.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,8 +11,20 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import logo from "../../assets/whitetranslogo.png";
 import EventCalIcon from "../../assets/event_cal_icon.svg";
 import EventTypeIcon from "../../assets/event_type_icon.svg";
+import route_names from "../../data_obj/RouteNames";
+
 
 function Footer() {
+  const navigate = useNavigate();
+
+ function navigateToEventTypesPage() {
+    navigate(route_names.event_type);
+  }
+
+  function navigateToEventCalPage() {
+    navigate(route_names.event_cal);
+  }
+
   return (
     <footer>
       <section className="top-half">
@@ -30,7 +42,7 @@ function Footer() {
         <div className="footer-links">
           <ul>
             <li>
-              <Link to="/about-us">About Us</Link>
+              <Link to={route_names.about_us}>About Us</Link>
             </li>
             <li>
               <DropdownMenu
@@ -42,24 +54,20 @@ function Footer() {
                   {
                     name: "Type of Events",
                     id: "footerEventType",
-                    handleClick: () => {
-                      window.location.href = "/event-types";
-                    },
+                    handleClick: navigateToEventTypesPage,
                     icon: EventTypeIcon,
                   },
                   {
                     name: "Event Calendar",
                     id: "footerEventCalendar",
-                    handleClick: () => {
-                      window.location.href = "/event-calendar";
-                    },
+                    handleClick: navigateToEventCalPage,
                     icon: EventCalIcon,
                   },
                 ]}
               />
             </li>
             <li>
-              <Link to="/blog">Blog</Link>
+              <Link to={route_names.blog}>Blog</Link>
             </li>
             <li>
               <a
@@ -71,7 +79,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              <Link to="/volunteer">Volunteer</Link>
+              <Link to={route_names.volunteer}>Volunteer</Link>
             </li>
           </ul>
         </div>
