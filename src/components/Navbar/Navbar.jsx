@@ -5,7 +5,7 @@ import logo from "../../assets/BCC_logo.png";
 import HamburgerMenuIcon from "@mui/icons-material/Menu";
 import EventCalIcon from "../../assets/event_cal_icon.svg";
 import EventTypeIcon from "../../assets/event_type_icon.svg";
-
+import route_names  from '../../data_obj/RouteNames'
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -32,11 +32,11 @@ function Navbar() {
   }, []);
 
   function navigateToEventTypesPage() {
-    navigate("/event-types");
+    navigate(route_names.event_type);
   }
-
+//
   function navigateToEventCalPage() {
-    navigate("/event-calendar");
+    navigate(route_names.event_cal);
   }
 
   return (
@@ -68,12 +68,12 @@ function Navbar() {
             />
           </li>
           <li className="navbar__desktop-menu-item">
-            <Link className="navbar__link" to="/about-us">
+            <Link className="navbar__link" to={route_names.about_us}>
               About Us
             </Link>
           </li>
           <li className="navbar__desktop-menu-item">
-            <Link className="navbar__link" to="/blog">
+            <Link className="navbar__link" to={route_names.blog}>
               Blog
             </Link>
           </li>
@@ -87,7 +87,7 @@ function Navbar() {
             </Link>
           </li>
           <li className="navbar__desktop-menu-item">
-            <Link className="navbar__link" to="/volunteer">
+            <Link className="navbar__link" to={route_names.volunteer}>
               Volunteer
             </Link>
           </li>
@@ -108,7 +108,7 @@ function Navbar() {
               name: "Type of Events",
               id: "mobileEventTypeBtn",
               handleClick: () => {
-                navigate("/event-types");
+                navigate(route_names.event_type);
               },
               icon: EventTypeIcon,
             },
@@ -116,7 +116,7 @@ function Navbar() {
               name: "Event Calendar",
               id: "mobileEventCalBtn",
               handleClick: () => {
-                navigate("/event-calendar");
+                navigate(route_names.event_cal);
               },
               icon: EventCalIcon,
             },
@@ -124,14 +124,14 @@ function Navbar() {
               name: "About Us",
               id: "mobileAboutUsBtn",
               handleClick: () => {
-                navigate("/about-us");
+                navigate(route_names.about_us);
               },
             },
             {
               name: "Blog",
               id: "mobileBlogBtn",
               handleClick: () => {
-                navigate("/blog");
+                navigate(route_names.blog);
               },
             },
             {
@@ -147,7 +147,7 @@ function Navbar() {
               name: "Volunteer",
               id: "mobileVolunteerBtn",
               handleClick: () => {
-                navigate("/volunteer");
+                navigate(route_names.volunteer);
               },
             },
           ]}

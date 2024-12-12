@@ -2,6 +2,8 @@ import './AboutUsCard.css'
 import cafeImg from '../../assets/code&coffee.png'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import { Link } from "react-router-dom";
+import route_names  from '../../data_obj/RouteNames'
 
 const AboutUsCard = () => {
   return (
@@ -17,7 +19,7 @@ const AboutUsCard = () => {
             </div>
             <div className="about-us__text-btn">
                 <button className = "about-us__btn">
-                    <div className="about-us__btn-txt">Learn More</div>
+                    <div className="about-us__btn-txt"><Link to={route_names.about_us}  style={{ textDecoration: 'none' ,color: 'inherit'}}>Learn More</Link></div>
                     <div className="about-us__btn-icon"><ArrowRightAltIcon /></div>
                 </button>
             </div>
@@ -28,5 +30,6 @@ const AboutUsCard = () => {
     </div>
   )
 }
+
 
 export default AboutUsCard

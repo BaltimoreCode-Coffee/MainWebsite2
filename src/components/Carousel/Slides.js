@@ -9,11 +9,11 @@ const about_route = '/event-types'//Find more info on the event types page
 const event_route = '/event-calendar'
 
 const Slides = [
-    {"image": regular_meeting, "title": "Regular Meetings", "about_route": about_route, "event_route":event_route }, 
-    {"image": demo_day, "title": "Demo Days",  about_route, "event_route":event_route},
-    {"image": workshop, "title": "Workshops",  about_route, "event_route":event_route},
-    {"image": lightning_talk, "title": "Lightning Talks",  about_route, "event_route":event_route},
-    {"image": symposium, "title": "Symposiums",  about_route, "event_route":event_route}
+    {"image": regular_meeting, "title": "Regular Meetings"}, 
+    {"image": demo_day, "title": "Demo Days"},
+    {"image": workshop, "title": "Workshops"},
+    {"image": lightning_talk, "title": "Lightning Talks"},
+    {"image": symposium, "title": "Symposiums"}
     
 ]
 
