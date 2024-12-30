@@ -95,12 +95,21 @@ color: purple
   padding-bottom: 85px; 
 }
 
-.footer-events{
+/* Target the button id of events and all othe nav links */
+.footer-links li, .footer-events, #footerEventsButton {
   color: gray;
-  font-size: 20px; 
+  outline: none;
+  margin: 0 30px;
+  font-family: "DM Sans", Helvetica, sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 20px;
+
+ 
 }
 
-.footer-links ul {
+.footer-links ul, .footer-events, #footerEventsButton {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -109,15 +118,11 @@ color: purple
   padding-bottom: 5px;
 }
 
-.footer-links li {
-  margin: 0 30px;
-  font-size: 23px;
-  
-}
 
 .footer-links a {
   color: grey;
   text-decoration: none;
+  outline: none;
  
 }
 
