@@ -17,6 +17,7 @@
 body {
   margin: 0;
   background-color: var(--primary-purple);
+  height: 100%;
 }
 main {
   max-width: 1262px;
@@ -49,4 +50,14 @@ h2 {
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content{
+  flex: 1 1 auto;
 }
