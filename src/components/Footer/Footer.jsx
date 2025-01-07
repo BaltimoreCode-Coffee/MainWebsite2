@@ -27,6 +27,75 @@ function Footer() {
 
   return (
     <footer>
+      <section className="mini-footer">
+        <div className="mini-footer-logo-container">
+          <img
+            src={logo}
+            id="footer-logo"
+            alt="Baltimore Code and Coffee logo"
+          />
+          </div>
+        <div className="mini-footer-menu">
+          <ul>
+            <li>
+              <Link to={route_names.about_us}>About Us</Link>
+            </li>
+           <li>
+              <Link to={route_names.events}>Events</Link>
+           </li>
+            <li>
+              <Link to={route_names.volunteer}>Volunteer</Link>
+            </li> 
+            <li>
+              <Link to={route_names.blog}>Blog</Link>
+            </li>
+            <li>
+              <a
+                href="https://hcb.hackclub.com/donations/start/baltimore-code-and-coffee"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sponsor
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="social-list">
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/baltimore-code-coffee/"
+                className="social-button"
+              >
+                <FontAwesomeIcon className="social-icon" icon={faLinkedin} />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://baltimoretech.slack.com/archives/CTDNSM6EP"
+                className="social-button"
+              >
+                <FontAwesomeIcon className="social-icon" icon={faSlack} />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.meetup.com/baltimore-code-and-coffee"
+                className="social-button"
+              >
+                <FontAwesomeIcon className="social-icon" icon={faMeetup} />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+        <p className="copyright">
+          © 2024 Baltimore Code and Coffee All rights reserved.
+        </p>
+        </div>
+      </section>
+
+      <section className="full-footer">
       <section className="top-half">
         <div className="footer-logo-container">
           <img
@@ -115,6 +184,7 @@ function Footer() {
           </li>
         </ul>
       </div>
+      </section>
     </footer>
   );
 }

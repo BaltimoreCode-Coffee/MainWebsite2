@@ -1,6 +1,10 @@
 footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
   background-color: #30123B;
   margin-top: 50px;
+  z-index: 1000;
 }
 
 .top-half {
@@ -145,8 +149,75 @@ li {
   list-style: none;
 }
 
-.mini-menu {
-  display: block;
-  align-items: center;
-  list-style: none;
+.mini-footer {
+  display: none;
+}
+
+
+@media (max-width: 480px) {
+  .mini-footer {
+    display: block;
+  }
+
+  .full-footer {
+    display: none;
+  } 
+
+  .mini-footer-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .mini-footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  } 
+
+  .mini-footer-menu li {
+    margin: 10px 10px;
+  }
+
+  .mini-footer-menu a {
+    color: white;
+    text-decoration: none;
+    outline: none;
+    font-size: 30px;
+  
+  }
+
+  .social-list {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+
+  .social-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-list li {
+    margin: 0 10px; /* Add horizontal spacing between items */
+  }
+  
+  .social-icon {
+    font-size: 17px; /* Set the icon size */
+  }
+
+  .copyright {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+  }
 }
