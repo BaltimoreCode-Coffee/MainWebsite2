@@ -1,54 +1,60 @@
 .navbar {
-    background: #f4f2f5;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 68px;
-  }
-  
-  .navbar__icon {
-    display: inline-block;
-    width: 120px;
-    height: 50px;
-    cursor: pointer;
-    margin-left: 33px;
-  }
-  
-  .navbar__desktop-menu {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-right: 67px;
-  }
-  
-  .navbar__link {
-    text-decoration: none;
-  }
-  
-  #navEventsButton,
-  #mobileNavEventsButton {
-    color: #181818;
-    text-transform: capitalize;
-  }
-  
-  .MuiButtonBase-root,
-  #navEventsButton,
-  .navbar__desktop-menu,
-  .navbar__link {
-    font-family: "DM Sans", Helvetica, sans-serif;
-    font-weight: 400;
-    line-height: 1;
-    font-size: 14px;
-    color: #181818;
-  }
-  
-  #mobileEventTypeBtn,
-  #mobileEventCalBtn {
-    font-style: italic;
-    padding-left: 20px;
-  }
-  
-  .navbar__menu-icon {
-    padding-right: 4px;
-  }
+  background: #f4f2f5;
+  display: flex;
+  position: sticky;
+  z-index: 100;
+  top: 0px;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  width: 100%;
+}
+
+.navbar__icon {
+  display: flex;
+  align-items: center;
+  width: 235px;
+  height: 85px;
+  padding: 0px;
+  cursor: pointer;
+  margin-left: 33px;
+}
+
+.navbar__desktop-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 67px;
+}
+
+.navbar__link {
+  text-decoration: none;
+}
+
+#navEventsButton,
+#mobileNavEventsButton {
+  color: #181818;
+  text-transform: capitalize;
+}
+
+.MuiButtonBase-root,
+#navEventsButton,
+.navbar__desktop-menu,
+.navbar__link {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 14px;
+  color: #181818;
+}
+
+#mobileEventTypeBtn,
+#mobileEventCalBtn {
+  font-style: italic;
+  padding-left: 20px;
+}
+
+.navbar__menu-icon {
+  padding-right: 4px;
+}

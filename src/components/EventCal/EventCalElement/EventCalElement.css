@@ -1,0 +1,41 @@
+.event-cal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-height: 100%;
+}
+
+.event-cal__section {
+  display: flex;
+}
+
+.event-cal__date {
+  color: #bca9e9;
+  font-size: 20px;
+  font-family: var(--secondary-font);
+  line-height: 1;
+  width: 160px;
+  margin-right: 26px;
+}
+
+.event-cal__divider {
+  margin-right: 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-cal__dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+}
+
+.event-cal__line {
+  background-color: #2e2e2e;
+  width: 3px;
+  flex-grow: 1;
+}

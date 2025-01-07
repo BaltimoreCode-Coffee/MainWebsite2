@@ -4,7 +4,7 @@ import "./App.css";
 import HomeView from "./components/HomeView/HomeView";
 import Navbar from "./components/Navbar/Navbar";
 import EventTypes from "./components/EventTypes/EventTypes";
-import EventCal from "./components/EventCal/EventCal";
+import EventCalPage from "./components/EventCal/EventCalPage";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Blog from "./components/Blog/Blog";
 import Footer from "./components/Footer/Footer";
@@ -19,7 +19,7 @@ function App() {
       <Routes >
         <Route path="/" element={<HomeView />} />
         <Route path="/event-types" element={<EventTypes />} />
-        <Route path="/event-calendar" element={<EventCal />} />
+        <Route path="/event-calendar" element={<EventCalPage />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/volunteer" element={<Volunteer />} />

@@ -10,11 +10,16 @@
     color: var(--primary-white);
 }
 
-
-.blog-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+.background-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 22vw;
+    margin-right: 30px;
+    height: auto;
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: -1;
+    background-position-x: 175%;
+    background-position-y: -75%;
+  }

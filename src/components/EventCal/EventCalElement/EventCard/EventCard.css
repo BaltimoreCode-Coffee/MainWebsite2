@@ -1,0 +1,85 @@
+.event-card {
+  padding: 20px;
+  background-color: #ffffffe5;
+  color: #000;
+  max-width: 929px;
+  max-height: 320px;
+  display: grid;
+  grid-template-columns: 1fr 282px;
+  grid-template-rows: repeat(2, max-content);
+  grid-template-areas:
+    "info visuals"
+    "attendees link";
+
+  gap: 20px;
+}
+
+.event-card__info {
+  grid-area: info;
+}
+
+.event-card__time {
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #9857d3;
+}
+
+.event-card__title {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  line-height: 2.2;
+  font-weight: 700;
+}
+
+.event-card__description {
+  max-height: 56px;
+  max-width: 608px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  line-height: 1.6;
+  font-family: var(--secondary-font);
+  color: #000;
+  font-weight: 400;
+}
+
+.event-card__description-span {
+  display: inline-block;
+}
+
+.event-card__visuals {
+  grid-area: visuals;
+}
+
+.event-card__img {
+  width: 100%;
+  max-height: 158px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px -3px #0000001a;
+}
+
+.event-card__attendees {
+  color: #707070;
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  grid-area: attendees;
+}
+
+.event-card__button {
+  grid-area: link;
+  margin-left: auto;
+}
+
+/* .event-card__pfp {
+  border: 1px solid #fff;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+} */

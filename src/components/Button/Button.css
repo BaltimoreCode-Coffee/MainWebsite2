@@ -6,6 +6,7 @@
   border: none;
   color: #f4f0ff;
   display: flex;
+  width: min-content;
   align-items: center;
   gap: 4px;
   font-size: 14px;
