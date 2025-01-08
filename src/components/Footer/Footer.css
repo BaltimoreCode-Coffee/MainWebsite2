@@ -1,97 +1,230 @@
+/* Ensure the footer is at the bottom without overlapping content */
+
+
+
+
+
+
+footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #30123B;
+  margin-top: 50px;
+  z-index: 1000;
+}
+
+.top-half {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 170px;
+  padding-left: 155px;
+  padding-right: 150px;
+  margin-bottom: 50px
+} 
+
 .bottom-half {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-top:  1px inset #e9ecef;
+  height: 50px;
+  padding-left: 155px;
+  padding-right: 150px;
+}
+
+
+#footer-logo {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 200px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+} 
+
+#envelope {
+color: purple
+}
+
+
+
+.email a{
+    color: white;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.email a:hover{
+    color: purple;
+    transition: 0.3s;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.social-list li {
+  margin: 0 10px; /* Add some space between the items */
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Set the width of the button */
+  height: 30px; /* Set the height of the button */
+  border-radius: 50%; /* Make the button rounded */
+  background-color: #6922ac; /* Set the background color */
+  color: gray; /* Set the icon color */
+  text-decoration: none; /* Remove underline from links */
+  transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+.social-button:hover {
+  background-color: grey; /* Change background color on hover */
+  color: #6922ac
+}
+
+.social-icon {
+  font-size: 17px; /* Set the icon size */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding-bottom: 85px; 
+}
+
+/* Target the button id of events and all othe nav links */
+.footer-links li, .footer-events, #footerEventsButton {
+  color: gray;
+  outline: none;
+  margin: 0 30px;
+  font-family: "DM Sans", Helvetica, sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 20px;
+
+ 
+}
+
+.footer-links ul, .footer-events, #footerEventsButton {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+
+.footer-links a {
+  color: grey;
+  text-decoration: none;
+  outline: none;
+ 
+}
+
+.footer-links a:hover {
+  color: purple;
+  transition: 0.3s;
+}
+
+.copyright {
+  color: grey;
+  font-size: 15px;
+}
+
+.menus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.mini-footer {
+  display: none;
+}
+
+
+@media (max-width: 480px) {
+  .mini-footer {
+    display: block;
+  }
+
+  .full-footer {
+    display: none;
+  } 
+
+  .mini-footer-logo-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    border-top: 1px dotted #e9ecef;
-    height: 50px;
+    margin-top: 20px;
   }
-  
-  footer {
-    border-top: dotted 1px #e9ecef;
-    background-color: #240d57;
+
+  .mini-footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  } 
+
+  .mini-footer-menu li {
+    margin: 10px 10px;
   }
+
+  .mini-footer-menu a {
+    color: white;
+    text-decoration: none;
+    outline: none;
+    font-size: 30px;
   
-  
-  
-  .email a{
-      color: white;
-      font-size: 20px;
-      margin-top: 25px;
   }
-  
-  .email a:hover{
-      color: purple;
-      transition: 0.3s;
-  }
-  
+
   .social-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
   }
-  
-  .social-icon {
-    padding: 15px;
-    color: purple;
-    font-size: 25px;
-  }
-  
-  .social-icon:hover {
-    color: white;
-    transition: 0.3s;
-  }
-  
-  .footer-links {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-  }
-  
-  .footer-links ul {
+
+  .social-list ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-bottom: 5px;
   }
   
-  .footer-links li {
-    margin: 0 10px;
-    font-size: 23px;
+  .social-list li {
+    margin: 0 10px; /* Add horizontal spacing between items */
   }
   
-  .footer-links a {
-    color: white;
-    text-decoration: none;
-  
+  .social-icon {
+    font-size: 17px; /* Set the icon size */
   }
-  
-  .footer-links a:hover {
-    color: purple;
-    transition: 0.3s;
-  }
-  
+
   .copyright {
     color: white;
     font-size: 15px;
+    text-align: center;
   }
-  
-  .menus {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  .mini-menu {
-    display: block;
-    align-items: center;
-    list-style: none;
-  }
+}
