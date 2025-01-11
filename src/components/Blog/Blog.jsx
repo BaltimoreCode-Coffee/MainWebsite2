@@ -1,6 +1,6 @@
 import "./Blog.css";
 import BlogHero from "../BlogHero/BlogHero";
-import BlogCard from "../BlogCard/BlogCard";
+import BlogList from "../BlogList/BlogList";
 import Stack from '@mui/material/Stack';
 import Pagination from '@mui/material/Pagination';
 export default function Blog() {
@@ -16,7 +16,7 @@ export default function Blog() {
     </section>
 
     <section className="blog-cards">
-    
+      <BlogList />
       </section>
       <Stack spacing={2}>
     
