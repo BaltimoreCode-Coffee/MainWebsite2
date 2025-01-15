@@ -1,22 +1,20 @@
-import react from 'react';
+
 import './BlogCard.css';
-import BlogInfo from '../BlogInfo/BlogInfo';
+//import BlogImage from '../../assets/BlogPlaceholder.jpg';
 
-export default function BlogCard(props) {
 
-    console.log(props)
-
+export default function BlogCard({blog}) {
     return (
        <div className="card">
-             <img
-               src={BlogImage}
+             {/* <img
+               src={blog.image}
                alt="Placeholder"
                className="card-image"
-             />
+             /> */}
              <div className="card-info">
-               <p className="card-tag">{tag}</p>
-               <h3 className="card-title">{title}</h3>
-               <p className="card-desc">{desc}</p>
+               <p className="card-tag">{blog.tags}</p>
+               <h3 className="card-title">{blog.title}</h3>
+               <p className="card-desc">{blog.description}</p>
              </div>
            </div>
     )

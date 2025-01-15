@@ -11,7 +11,7 @@ export default function BlogList(){
     useEffect(() => {
         const fetchBlogs = async () => {
             const {data, error} = await supabase
-                .from('blogs')
+                .from('blog')
                 .select()
             if(error){
                 setBlogs(null)
@@ -26,7 +26,6 @@ export default function BlogList(){
     
     return (
         <div className="blog-list">
-            <h2>Blog</h2>
             <div className="blog-list__cards">
                 {blogs && blogs.map((blog) => {
                     return <BlogCard blog={blog} key={uid()} />

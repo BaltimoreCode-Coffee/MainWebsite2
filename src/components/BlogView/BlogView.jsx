@@ -1,6 +1,7 @@
 import React from 'react';
 import BlogHero from '../BlogHero/BlogHero';
-import BlogCard from '../BlogCard/BlogCard';
+import BlogList from '../BlogList/BlogList';
+
 import './BlogView.css';
 
 export default function BlogView() {
@@ -12,21 +13,8 @@ export default function BlogView() {
                     <h3>Your Daily Brew of Tech Insights, Community, Stories and Coding Tips</h3>
                 </div>
                 <div className="blog-grid-container">
-                    <div className="grid-item">
-                        <BlogHero />
-                    </div>
-                    <div className="grid-item">
-                        <BlogCard />
-                        <BlogCard />
-                    </div>
-                    <div className="grid-item">
-                        <BlogCard />
-                        <BlogCard />
-                    </div>
-                    <div className="grid-item">
-                        <BlogCard />
-                        <BlogCard />
-                    </div>
+                    <BlogHero />
+                    <BlogList />
                 </div>
                 <div className="blog-view-footer">
                     <a href="/blog" className="blog-view-footer-link">See All Articles</a>
