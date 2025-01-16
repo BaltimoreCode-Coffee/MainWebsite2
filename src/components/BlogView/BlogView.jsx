@@ -1,5 +1,5 @@
-import React from 'react';
-import BlogHero from '../BlogHero/BlogHero';
+
+
 import BlogList from '../BlogList/BlogList';
 
 import './BlogView.css';
@@ -13,7 +13,6 @@ export default function BlogView() {
                     <h3>Your Daily Brew of Tech Insights, Community, Stories and Coding Tips</h3>
                 </div>
                 <div className="blog-grid-container">
-                    <BlogHero />
                     <BlogList />
                 </div>
                 <div className="blog-view-footer">

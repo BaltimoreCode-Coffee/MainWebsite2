@@ -1,6 +1,6 @@
 import "./Blog.css";
-import BlogHero from "../BlogHero/BlogHero";
-import BlogList from "../BlogList/BlogList";
+
+import FullBlogList from "../FullBlogList/FullBlogList";
 import Stack from '@mui/material/Stack';
 import Pagination from '@mui/material/Pagination';
 export default function Blog() {
@@ -11,12 +11,10 @@ export default function Blog() {
     <h4>Daily Brew of Tech Insights, Community Stories and Coding Tips</h4>
     </section>
 
-    <section className="blog-highlight">
-      <BlogHero id="highlight"/> 
-    </section>
+ 
 
     <section className="blog-cards">
-      <BlogList />
+      <FullBlogList />
       </section>
       <Stack spacing={2}>
     

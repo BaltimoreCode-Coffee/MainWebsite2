@@ -1,12 +1,12 @@
 import {useState, useEffect} from "react";
 import {uid} from "uid"
-import "./BlogList.css"
+import "./FullBlogList.css"
 import BlogCard from "../BlogCard/BlogCard"
 import BlogHero from "../BlogHero/BlogHero"
 import supabase from "../../utils/supabaseClient"
 
 
-export default function BlogList(){
+export default function FullBlogList(){
     const [blogs, setBlogs] = useState(null)
 
     useEffect(() => {
@@ -27,11 +27,13 @@ export default function BlogList(){
     
     return (
         <div className="blog-list">
-            <div className="blog-list__cards">
+            <div className="blog-list__card-container">
                {blogs && blogs.length > 0 && (
                 <>
-                <BlogHero blog={blogs[0]} key={uid()}/>
-                <div className="blog-list__cards__grid">
+                <div className="blog-list__cards__hero">
+                    <BlogHero blog={blogs[0]} key={uid()}/>
+                </div>
+                <div className="blog-list__cards" id="full-blog-list">
                     {blogs.slice(1).map((blog) => (
                         <BlogCard blog={blog} key={uid()}/>
                     ))}

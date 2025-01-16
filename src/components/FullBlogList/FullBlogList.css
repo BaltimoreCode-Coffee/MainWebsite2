@@ -1,0 +1,25 @@
+.blog-list__cards__hero{
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+}
+
+#full-blog-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    padding-top: 1rem;
+}
