@@ -1,9 +1,9 @@
 #blog-hero {
-  background-image: url('D:\Projects\Personal Projects\BCC\BCCFutureSite\src\assets\BlogPlaceholder.jpg');
+  /* background-image: url('D:\Projects\Personal Projects\BCC\BCCFutureSite\src\assets\BlogPlaceholder.jpg');
   background-size: cover;
-  background-position: center;
-  width: 576px;
-  height: 296px;
+  background-position: center; */
+  grid-column-start: 1;
+  grid-column-end: 3;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   background-color: #fff;
@@ -44,4 +44,14 @@
   border-radius: 5px;
 }
 
+#highlight-title {
+  font-size: 48px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
 
+}
+
+#highlight-tags {
+  margin-top: 30px;
+}

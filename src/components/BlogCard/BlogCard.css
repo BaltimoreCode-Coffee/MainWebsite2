@@ -1,20 +1,14 @@
 .card {
-    width: 256px;
-    height: 291px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the image horizontally */
-    padding: 0 20px 40px 20px;
-    margin: 10px;
 }
 
 .card-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    margin-bottom: 12px;
 }
 
 .card-info {
@@ -22,8 +16,8 @@
     flex-direction: column;
     align-items: flex-start; /* Align card info to the left */
     justify-content: center;
-    width: 100%; /* Ensure card info takes full width */
-    padding: 0 20px; /* Adjust padding if needed */
+  
+    padding: 0 20px 40px 20px; /* Adjust padding if needed */
 }
 
 .card-title {
@@ -33,6 +27,14 @@
     margin-bottom: 10px;
 }
 
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    margin-left: -5px; /* Adjust margin if needed */
+    
+}
+
 .card-tag {
     font-size: 10px;
     color: white;
@@ -40,6 +42,7 @@
     background-color: purple;
     padding: 7px;
     border-radius: 7px;
+    margin-right: 5px;
 }
 
 .card-desc {

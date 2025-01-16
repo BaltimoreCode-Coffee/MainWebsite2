@@ -36,14 +36,7 @@ h3{
     margin-bottom: 20px;
 }
 
-.blog-grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1px;
-    width: 101%;
-    margin-top: 20px;
-}
+
 
 .grid-item {
     display: flex;
