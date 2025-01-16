@@ -13,14 +13,17 @@
     max-width: 70%;
 }
 
-.volunteer h2{
+.volunteer p{
     margin-top: 0px;
-    font-family: Raleway;
+    font-family:var(--primary-font);
     color: var(--primary-white);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .collage{
@@ -28,6 +31,7 @@
     background-color: rgba(255, 255, 255, 0.3);
     max-width: 90%;
 }
+
 
 .volunteer_bottom{
     padding-top: 50px;
