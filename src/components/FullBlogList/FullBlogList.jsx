@@ -26,7 +26,7 @@ export default function FullBlogList(){
     }, [])
     
     return (
-        <div className="blog-list">
+        <div className="full-blog-list">
             <div className="blog-list__card-container">
                {blogs && blogs.length > 0 && (
                 <>
