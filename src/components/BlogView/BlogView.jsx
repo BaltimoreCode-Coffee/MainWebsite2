@@ -12,9 +12,7 @@ export default function BlogView() {
                 <div className="blog-view-desc">
                     <h3>Your Daily Brew of Tech Insights, Community, Stories and Coding Tips</h3>
                 </div>
-               
                     <BlogList />
-              
                 <div className="blog-view-footer">
                     <a href="/blog" className="blog-view-footer-link">See All Articles</a>
                 </div>

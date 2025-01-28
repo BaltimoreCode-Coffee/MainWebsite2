@@ -15,9 +15,9 @@ h3{
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 100vh; /* Ensure it takes the full viewport height */
-    padding: 20px;
+
     box-sizing: border-box;
+
 }
 
 .blog-view {

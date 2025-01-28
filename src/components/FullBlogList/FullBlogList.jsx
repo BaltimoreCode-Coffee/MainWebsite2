@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import {uid} from "uid"
 import "./FullBlogList.css"
+import FullBlogHero from "../FullBlogHero/FullBlogHero";
 import BlogCard from "../BlogCard/BlogCard"
 import BlogHero from "../BlogHero/BlogHero"
 import supabase from "../../utils/supabaseClient"
@@ -26,16 +27,16 @@ export default function FullBlogList(){
     }, [])
     
     return (
-        <div className="full-blog-list">
+        <div className="full-blog-list-container">
             <div className="blog-list__card-container">
                {blogs && blogs.length > 0 && (
                 <>
                 <div className="blog-list__cards__hero">
-                    <BlogHero blog={blogs[0]} key={uid()}/>
+                    <FullBlogHero blog={blogs[0]} key={uid()} className="full-blogHero"/>
                 </div>
                 <div className="blog-list__cards" id="full-blog-list">
                     {blogs.slice(1).map((blog) => (
-                        <BlogCard blog={blog} key={uid()}/>
+                        <BlogCard blog={blog} key={uid()} className="full-blogCards"/>
                     ))}
                 </div>
                 </>

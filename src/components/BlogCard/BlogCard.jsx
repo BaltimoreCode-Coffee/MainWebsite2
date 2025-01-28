@@ -1,7 +1,6 @@
 
 import './BlogCard.css';
-//import BlogImage from '../../assets/BlogPlaceholder.jpg';
-
+import { Link } from 'react-router-dom';
 
 export default function BlogCard({blog}) {
     return (
@@ -17,7 +16,9 @@ export default function BlogCard({blog}) {
                 <span key={index} className="card-tag">{tag}</span>
                )) }
                </div>
-               <h3 className="card-title">{blog.title}</h3>
+               <h3 className="card-title">
+                {blog.title}
+                </h3>
                <p className="card-desc">{blog.description}</p>
              </div>
            </div>
