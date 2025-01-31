@@ -2,7 +2,7 @@
   background: #f4f2f5;
   display: flex;
   position: sticky;
-  z-index: 100;
+  z-index: 10001;
   top: 0px;
   justify-content: space-between;
   align-items: center;
@@ -49,11 +49,7 @@
   color: #181818;
 }
 
-#mobileEventTypeBtn,
-#mobileEventCalBtn {
-  font-style: italic;
-  padding-left: 20px;
-}
+
 
 .navbar__menu-icon {
   padding-right: 4px;

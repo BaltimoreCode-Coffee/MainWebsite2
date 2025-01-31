@@ -1,14 +1,15 @@
 /* Container just to demonstrate layout, not strictly necessary */
 .container {
-    position: static;
+    position: relative;
     width: auto;
     height: auto;
     overflow-x: visible;
+    z-index: 10001 !important;
     
 
   }
  
-  
+
   /* The side-menu navigation */
   .container  .side-menu {
     position: absolute;
@@ -19,6 +20,7 @@
     background:radial-gradient(farthest-side, #4d046b 10%,#1f0834 110%);
     color: white;
     transition: right 0.4s ease-out;
+    z-index: 10001 !important;
 
     padding: 0; /* Remove padding */
     
@@ -31,6 +33,7 @@
     right: 0;
     overflow-y: auto;
     height: 100vh;
+   
 
   }
 
