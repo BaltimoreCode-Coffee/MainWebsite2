@@ -6,6 +6,10 @@
   margin-top: 50px;
 }
 
+.mini-blog-header{
+  display: none
+}
+
 .blog-header {
   display: flex;
   flex-direction: column;
@@ -41,3 +45,20 @@
   height: 365px;
 }
 
+@media screen and (max-width: 680px) {
+  .blog-header{
+    display: none;
+}
+
+.mini-blog-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    border: 1px solid #fff;
+    width: 80%;
+    text-align: left;
+}
+  
+}

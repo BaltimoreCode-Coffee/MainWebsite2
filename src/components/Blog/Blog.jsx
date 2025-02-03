@@ -10,6 +10,9 @@ export default function Blog() {
         <h1>Our Blogs</h1>
         <h4>Daily Brew of Tech Insights, Community Stories and Coding Tips</h4>
       </div>
+      <div className="mini-blog-header">
+        <h1>Code and Coffee Review</h1>
+      </div>
     
         <FullBlogList />
       <br />

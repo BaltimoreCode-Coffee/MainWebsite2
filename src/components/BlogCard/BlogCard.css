@@ -53,3 +53,29 @@
     font-size: 16px;
     color: #333;
 }
+
+@media screen and (max-width: 680px) {
+    .card {
+        width: 336px; /* Adjust width for smaller screens */
+        height: auto;
+        margin-bottom: 20px; /* Add some space between cards */
+        border-radius: 20px;
+    }
+
+    .card-image {
+        height: 150px; /* Adjust height for smaller screens */
+    }
+
+    .card-info {
+        padding: 0 10px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .card-title {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .card-desc {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    
+}

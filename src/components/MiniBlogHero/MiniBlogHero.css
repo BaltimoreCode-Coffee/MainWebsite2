@@ -1,0 +1,26 @@
+.mini-blog-hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-left: 32px;
+}   
+
+.mini-blog-hero-tag {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: blueviolet;
+}
+
+.mini-blog-hero-info{
+    display: flex;
+    flex-direction: column; 
+    align-items: left;
+    gap: 0.5rem;
+}
+
+.mini-blog-hero-date{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.875rem;
+    color: #888;
+
+}

@@ -49,3 +49,23 @@ img {
     color: #333;
     margin-bottom: 10px;
 }
+
+@media  screen and (max-width: 680px) {
+    .full-blog-hero {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .full-blog-hero-info {
+        padding: 0 20px 20px 20px;
+    }
+
+    .full-blog-hero-title {
+        font-size: 20px;
+    }
+
+    .full-blog-hero-desc {
+        font-size: 14px;
+    }
+    
+}
