@@ -7,10 +7,10 @@ import demoDay from '../../assets/carouselImages/demo_day.jpg'
 const EventTypeData = [
     {
         name: "Lightning Talks",
-        description: "In our lighting talks, speakers present for 10 minutes on a topic of interest ranging from innovation, software, education, design, art, & architecture etc — with the underlying theme of technology. At the end of each talk the floor is open for you to ask questions and have a dialogue with the speakers as well as with the crowd. The talks form a fast paced and energetic scene, where you can laugh, learn and leave inspired.",
+        description: "In our lighting talks, speakers present for 10 minutes on a topic of interest ranging from innovation, software, education, design, art, & architecture etc — with the underlying theme of technology.\n\nAt the end of each talk, the floor is open for you to ask questions and have a dialogue with the speakers as well as with the crowd. The talks form a fast-paced and energetic scene, where you can laugh, learn, and leave inspired.",        
         img: lightningTalk,
         btnTxt: 'Sign Up',
-        link: '/event-types',
+        link: 'https://forms.gle/Lb3NfQLqhfxbv2oX7 ',
         id: "lightning-talk-card"
     },
     {
@@ -18,7 +18,7 @@ const EventTypeData = [
         description: "Our symposium panel is a conversation among four experts from various fields and backgrounds around a central topic. The panel is split into two groups, one in favor of the topic of interest, the other against . To start the discussion, each panelist will give a 3 minute max opener making a case for the opposing side. After this we have 2 30-40 minute rounds of discussion, with a 15 minute intermission & time for questions during the second round.",
         img: symposium,
         btnTxt: 'Sign Up',
-        link: '/event-types',
+        link: 'https://forms.gle/hTqzESszwoJZuodq5',
         id: "symposium-card"
     },
     {
@@ -34,15 +34,15 @@ const EventTypeData = [
         description: "Our workshops are a fun,  hands on, introduction to various topics in CS and adjacent fields. Typically participants just need two prerequisites: A laptop and enthusiasm! We’ve had workshops ranging from the use of GIT in open source and communication skills for developers.",
         img: workshop,
         btnTxt: 'Sign Up',
-        link: '/event-types',
+        link: 'https://forms.gle/PRV7fgARQ3wXxzHDA ',
         id: "workshop-card"
     },
     {
-        name: "Demo Days",
+        name: "Demo Day",
         description: "Demo day is a chance for talented folks in the community to show off their hard work. Cool projects of various kinds, software, hardware (or both) are welcome. At the end, we vote for the best project!",
         img: demoDay,
         btnTxt: 'Sign Up',
-        link: '/event-types',
+        link: 'https://forms.gle/dt4V7jL5VzhRSBCD9',
         id: "demo-day-card"
     },
 ]

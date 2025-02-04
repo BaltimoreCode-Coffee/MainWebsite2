@@ -12,6 +12,7 @@
   --primary-font: "raleway", sans-serif;
   --secondary-font: "roboto", sans-serif;
   --tertiary-font: "PingFang-SC", sans-serif;
+  --mobile-carousel-breakpoint: 708px;
 }
 
 body {
@@ -71,3 +72,4 @@ h2 {
 .content{
   flex: 1 1 auto;
 }
+

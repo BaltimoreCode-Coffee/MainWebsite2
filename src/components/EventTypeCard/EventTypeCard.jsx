@@ -21,7 +21,7 @@ const EventTypeCard = ({eventType}) => {
 
     // Set the background image based on the window size
     const backgroundImage = isMobile
-        ? '../../../../public/favicon.ico.png'
+        ? null
         : eventType.img
 
     return (

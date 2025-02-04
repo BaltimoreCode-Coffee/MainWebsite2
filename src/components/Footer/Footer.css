@@ -160,8 +160,8 @@ li {
   display: none;
 }
 
-
-@media (max-width: 480px) {
+/*Mobile styling */
+@media  (max-width: 955px) {
   .mini-footer {
     display: block;
   }
@@ -210,21 +210,37 @@ li {
     justify-content: center;
     align-items: center;
     list-style: none;
-    padding: 0;
-    margin: 0;
+ 
+   padding-right: 50px;
   }
   
   .social-list li {
-    margin: 0 10px; /* Add horizontal spacing between items */
+    margin: 0 20px; /* Add horizontal spacing between items */
+  }
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Set the width of the button */
+    height: 50px; /* Set the height of the button */
+    border-radius: 50%; /* Make the button rounded */
+    background-color: white; /* Set the background color */
+    color: white; /* Set the icon color */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s; /* Add transition for hover effect */
   }
   
   .social-icon {
-    font-size: 17px; /* Set the icon size */
+    font-size: 30px; /* Set the icon size */
   }
-
+ 
   .copyright {
-    color: white;
+   
+    color: grey;
     font-size: 15px;
     text-align: center;
+    margin-left: 20px;
+    margin-bottom: 10px;
+   
   }
 }

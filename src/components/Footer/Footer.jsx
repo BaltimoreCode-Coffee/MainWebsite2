@@ -42,8 +42,11 @@ function Footer() {
             <li>
               <Link to={route_names.about_us}>About Us</Link>
             </li>
+            <li>
+              <Link to={route_names.event_cal}>Event Calendar</Link>
+           </li>
            <li>
-              <Link to={route_names.events}>Events</Link>
+              <Link to={route_names.event_type}>Event Types</Link>
            </li>
             <li>
               <Link to={route_names.volunteer}>Volunteer</Link>
@@ -120,7 +123,7 @@ function Footer() {
               className="footer-events"
                 buttonId="footerEventsButton"
                 menuId="footerEventsMenu"
-                buttonTitle="Event"
+                buttonTitle="Events"
                 menuItems={[
                   {
                     name: "Type of Events",
