@@ -2,7 +2,8 @@
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
 //import logo from "../../assets/BCC_logo.png";
 import logo from "../../assets/bcc-nav.png";
-import HamburgerMenuIcon from "@mui/icons-material/Menu";
+import HamburgerMenuIcon from "@mui/icons-material/MenuOutlined";
+import MenuCloseIcon from "@mui/icons-material/Close";
 import EventCalIcon from "../../assets/event_cal_icon.svg";
 import EventTypeIcon from "../../assets/event_type_icon.svg";
 import route_names from "../../data_obj/RouteNames";
@@ -98,7 +99,11 @@ function Navbar() {
         <MobileSlidingMenu
           buttonId="mobileNavEventsButton"
           menuId="mobileNavEventsMenu"
-          buttonIcon={<HamburgerMenuIcon fontSize="large" />}
+          buttonIcon={isMobileMenuOpen ? (
+            <HamburgerMenuIcon fontSize="large" />
+          ) : (
+            <MenuCloseIcon fontSize="large" />
+          )}
           menuItems={[
             {
               name: "Event",
