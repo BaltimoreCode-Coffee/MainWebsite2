@@ -27,15 +27,20 @@
     gap: 20px;
     padding: 60px 0px;
 }
-.sponsors__partner-link{
-    color: #BCA9E9;
+.desktop-container .sponsors__partner-link {
+    color: var(--secondary-white);
     font-family: Raleway;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    text-decoration-line: underline;
+    text-decoration: none;
+    text-align: center;
+    
+    
 }
+
+
 .mobile-carousel{
     display: none;
 }

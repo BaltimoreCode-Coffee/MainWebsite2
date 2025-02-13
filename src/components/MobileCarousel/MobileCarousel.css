@@ -1,12 +1,17 @@
 .mobile-carousel{
-    margin: 40px -50px;
+    margin: 40px -40px;
+    width: 100vw;
+    
 }
 .mobile-carousel .splide__slide{
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #fff;
     background: rgba(184, 184, 184, 0.16);
     border-radius: 10px;
+
 }
 .mobile-carousel .splide__track {
     height: auto;
+   
+  
 }

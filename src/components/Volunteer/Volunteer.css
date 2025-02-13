@@ -1,16 +1,26 @@
 .volunteer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+ 
     align-items: center;
-    text-align: center;
+  
     margin-top: 30px;
     padding: 0 52px;
 }
+.volunteer h1 {
+    font-size: 60px;
+    line-height: 1;
+    padding:0%;
 
+   
+  
+}
 .volunteer_top {
     margin-top: 50px;
+    margin-bottom: 50px;
     max-width: 70%;
+
+    
 }
 
 .volunteer p{
@@ -31,8 +41,8 @@
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur( 0x );
     -webkit-backdrop-filter: blur( 100px );
-  
-    max-width: 35%;
+    
+    max-width: 45%;
 }
 
 
@@ -54,18 +64,22 @@
 
 @media (max-width: 900px) {
     .volunteer h1 {
-        font-size: 32px;
+        font-size: 60px;
         line-height: 1;
         padding:0%;
     }
     .volunteer p{
-        font-size: 22px;
+        font-size: 25px;
         line-height: 1;
-        padding:0%;
+   
+        max-width: 100%;
+        
+      
     }
     .volunteer_bottom{
         padding-top: 50px;
-        max-width: 90%;
+       
+        
     }
     .collage{
         padding:1.5%;
@@ -82,5 +96,61 @@
         line-height: 32px;
         border-radius: 30px;
         padding: 8px 35px;
+     
+       
+    }
+}
+
+
+@media (max-width: 440px) {
+    .volunteer h1 {
+        font-size: 40px;
+        line-height: 1;
+        padding:0%;
+    }
+    .volunteer_top {
+        margin-top: 35px;
+        margin-bottom: 35px;
+      
+    
+        
+    }
+    .volunteer_bottom, .volunteer_top {
+        min-width: 300px;
+    }
+    .volunteer p{
+        font-size: 20px;
+        text-align: center;
+        align-content: center;
+        position: relative;
+        margin:0 auto;
+        width: 100%;
+        font-weight: 550; /* Add some bolding to compensate for eslightly smaller size*/
+       
+        
+      
+    }
+    .volunteer_bottom{
+        padding-top: 35px;
+       
+        
+    }
+    .collage{
+        padding:2.5%;
+        background-color: rgba(255, 255, 255, 0.3);
+        max-width: 98%;
+    }
+    
+
+    .volunteer button{
+        
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        border-radius: 30px;
+        padding: 8px 35px;
+    
+       
     }
 }

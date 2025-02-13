@@ -12,13 +12,13 @@ export default function Volunteer() {
       <p>Play an active role in Baltimore’s rise as a tech hub by joining our volunteer team!</p>
    
     </div>
-
-    <img src={collage} className="volunteer collage"/>
+   
+    <img src={collage} className="collage"/>
 
     <div className="volunteer_bottom">
       <p>If you’re passionate about coding and looking to increase your involvement in the 
-        tech community, becoming a volunteer at Code Coffee might be for you. As a volunteer, 
-        you’ll have the opportunity to turn your technical skills into leadership skills, and 
+        tech community, becoming a volunteer at Code Coffee might be for you. 
+        <br /> <br /> As a volunteer, you’ll have the opportunity to turn your technical skills into leadership skills, and 
         contribute to maintaining a vibrant tech ecosystem. Join us today and be a part of 
         something meaningful!</p>
     </div>

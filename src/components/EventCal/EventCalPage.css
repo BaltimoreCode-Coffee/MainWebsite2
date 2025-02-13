@@ -16,6 +16,10 @@
   margin-bottom: 22px;
 }
 
+.event-cal-pg__mobile-tabs {
+  display: none;
+}
+
 .event-cal-pg__main {
   padding: 0 95px;
 }
@@ -37,4 +41,153 @@
 
 .MuiStack-root > .event-cal-pg__pagination {
   margin: 100px auto 0;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .event-cal-pg__tabs,
+  .event-cal-pg__title,
+  .event-cal-pg__divider, 
+  .event-cal__date, 
+  .event-cal__divider {
+    display: none;
+  }
+
+  .event-cal-pg {
+    padding: 40px 0;
+  
+  }
+
+  .event-cal-pg__main {
+    padding: 0;
+  }
+
+  .event-cal-pg__mobile-tabs {
+    font-family: var(--primary-font);
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(184, 184, 184, 0.3);
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    width: 300px;
+    height: 28px;
+  }
+
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 1px;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 4px;
+  }
+
+  .tab.active {
+    color: var(--secondary-purple);
+  }
+
+  .slider {
+    position: absolute;
+    top: 2px;
+    /* left: 1px; */
+    width: 50.5%;
+    height: calc(100% - 4px);
+    background-color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    z-index: 0;
+  }
+
+  .slider.slide-right {
+    transform: translateX(92%);
+  }
+}
+
+
+@media (max-width: 1060px) {
+  .event-cal-pg__title {
+    font-size: 34px;
+  }
+
+  .event-cal-pg__tabs,
+  .event-cal-pg__divider, 
+  .event-cal__date, 
+  .event-cal__divider {
+    display: none;
+  }
+
+  .event-cal-pg__mobile-tabs {
+    font-family: var(--primary-font);
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(184, 184, 184, 0.3);
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    width: 300px;
+    height: 28px;
+  }
+
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 1px;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 4px;
+  }
+
+  .tab.active {
+    color: var(--secondary-purple);
+  }
+
+  .slider {
+    position: absolute;
+    top: 2px;
+    /* left: 1px; */
+    width: 50.5%;
+    height: calc(100% - 4px);
+    background-color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    z-index: 0;
+  }
+
+  .slider.slide-right {
+    transform: translateX(92%);
+  }
 }

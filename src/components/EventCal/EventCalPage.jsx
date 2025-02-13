@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import EventCalElement from "./EventCalElement/EventCalElement";
 import "./EventCalPage.css";
 import PaginationControlled from "../PaginationControlled/PaginationControlled";
@@ -7,6 +7,9 @@ export default function EventCalPage() {
   const [pageCount, setPageCount] = useState(0);
   const [pageView, setPageView] = useState("past");
   const [page, setPage] = useState(1);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1060) // Determine if the view is mobile
+
+  const endOfPageRef = useRef(null); // Reference to find end of page and trigger loading, if applicable
 
   const handlePageChange = (event, value) => {
     setPage(value);
@@ -19,6 +22,14 @@ export default function EventCalPage() {
   function handlePastPageViewClk() {
     setPageView("past");
   }
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 1060);
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="event-cal-pg">
@@ -47,17 +58,45 @@ export default function EventCalPage() {
             Past
           </button>
         </div>
+        <div className="event-cal-pg__mobile-tabs">
+          <div className="tab-container">
+            {/* Button for Upcoming Events */}
+            <div
+              className = {`tab ${pageView === 'upcoming' ? 'active' : ''}`}
+              onClick = {() => handleUpcomingPageViewClk()}
+            >
+              Upcoming
+            </div>
+
+            {/* Button for Past Events */}
+            <div
+              className = {`tab ${pageView === 'past' ? 'active' : ''}`}
+              onClick = {() => handlePastPageViewClk()}
+            >
+              Past
+            </div>
+            <div
+              className = {`slider ${pageView === 'past' ? 'slide-right' : ''}`}
+            />
+          </div>
+        </div>
         <EventCalElement
           setPageCount={setPageCount}
           pageView={pageView}
           pageIndex={page - 1}
+          isMobile = {isMobile} // Pass the mobile view flag to EventCalElement
+          endOfPageRef = {endOfPageRef} // Pass the observer target for scroll listener
         />
       </main>
-      <PaginationControlled
-        pageCount={pageCount}
-        classes="event-cal-pg__pagination"
-        handlePageChange={handlePageChange}
-      />
+      {!isMobile && (
+        <PaginationControlled
+          pageCount={pageCount}
+          classes="event-cal-pg__pagination"
+          handlePageChange={handlePageChange}
+        />
+      )}
+      {/* Observer Target Element */}
+      <div ref = {endOfPageRef} className = 'event-cal-pg__observer'></div>
     </div>
   );
 }

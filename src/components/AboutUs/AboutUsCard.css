@@ -27,15 +27,20 @@
   
   .about-us__text-header h1 {
     font-size: 1.8rem;
-    font-weight: bold;color: #222;
-    margin-bottom: 10px;
+
+        font-weight: 600;
+    color: #222;
+   
+     
+
   }
   
   .about-us__text-content p {
-    font-size: 1rem;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
     font-family: var(--secondary-font);
     margin-bottom: 20px;
-    
   }
   
   /* Button Styling */
@@ -118,7 +123,11 @@
     }
   
     .about-us__text-content p {
-        font-size: 14px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      margin-top: 20px;
+        
     }
   
     .about-us__text-btn {
