@@ -33,6 +33,14 @@
   color: #181818;
 }
 
+.navbar__link:hover {
+  color: purple;
+}
+
+.navbar__link:visited {
+  color: #181818;
+}
+
 #navEventsButton,
 #mobileNavEventsButton {
   color: #181818;
