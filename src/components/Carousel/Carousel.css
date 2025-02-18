@@ -135,3 +135,8 @@ button.custom.splide__arrow{
         }
     }
 }
+@media (max-width: 708px){
+    .carousel{
+        display: none;
+    }
+}

@@ -1,17 +1,28 @@
 /* Ensure the footer is at the bottom without overlapping content */
 
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
 footer{
   position: relative;
   bottom: 0;
   width: 100%;
+<<<<<<< HEAD
   background-color: #30123B;
   margin-top: 50px;
   z-index: 1000;
+=======
+  background-color: #200735; 
+  margin-top: 50px;
+  z-index: 1000;
+
+  
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
 }
 
 .top-half {
@@ -19,7 +30,10 @@ footer{
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+<<<<<<< HEAD
   margin-top: 15px;
+=======
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
   height: 170px;
   padding-left: 155px;
   padding-right: 150px;
@@ -31,8 +45,14 @@ footer{
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+<<<<<<< HEAD
   border-top:  1px inset #e9ecef;
   height: 50px;
+=======
+  border-top:  1px inset rgba(233, 236, 239, 0.5) ;
+
+  height: 70px;
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
   padding-left: 155px;
   padding-right: 150px;
 }
@@ -48,13 +68,21 @@ footer{
 } 
 
 #envelope {
+<<<<<<< HEAD
 color: purple
+=======
+color:  rgb(188, 188, 188);
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
 }
 
 
 
 .email a{
+<<<<<<< HEAD
     color: white;
+=======
+    color:    rgb(188, 188, 188);;
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
     font-size: 20px;
     margin-top: 25px;
 }
@@ -83,8 +111,13 @@ color: purple
   width: 30px; /* Set the width of the button */
   height: 30px; /* Set the height of the button */
   border-radius: 50%; /* Make the button rounded */
+<<<<<<< HEAD
   background-color: #6922ac; /* Set the background color */
   color: gray; /* Set the icon color */
+=======
+  background-color: white; /* Set the background color */
+  color: white; /* Set the icon color */
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
   text-decoration: none; /* Remove underline from links */
   transition: background-color 0.3s; /* Add transition for hover effect */
 }
@@ -95,7 +128,11 @@ color: purple
 }
 
 .social-icon {
+<<<<<<< HEAD
   font-size: 17px; /* Set the icon size */
+=======
+  font-size: 24px; /* Set the icon size */
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
 }
 
 .footer-links {
@@ -108,7 +145,11 @@ color: purple
 
 /* Target the button id of events and all othe nav links */
 .footer-links li, .footer-events, #footerEventsButton {
+<<<<<<< HEAD
   color: gray;
+=======
+  color: rgb(188, 188, 188);
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
   outline: none;
   margin: 0 30px;
   font-family: "DM Sans", Helvetica, sans-serif;
@@ -127,11 +168,19 @@ color: purple
   padding: 0;
   margin: 0;
   padding-bottom: 5px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
 }
 
 
 .footer-links a {
+<<<<<<< HEAD
   color: grey;
+=======
+  color: rgb(188, 188, 188);
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
   text-decoration: none;
   outline: none;
  
@@ -161,8 +210,13 @@ li {
   display: none;
 }
 
+<<<<<<< HEAD
 
 @media (max-width: 480px) {
+=======
+/*Mobile styling */
+@media  (max-width: 955px) {
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
   .mini-footer {
     display: block;
   }
@@ -211,6 +265,7 @@ li {
     justify-content: center;
     align-items: center;
     list-style: none;
+<<<<<<< HEAD
     padding: 0;
     margin: 0;
   }
@@ -223,9 +278,42 @@ li {
     font-size: 17px; /* Set the icon size */
   }
 
+=======
+ 
+   padding-right: 50px;
+  }
+  
+  .social-list li {
+    margin: 0 20px; /* Add horizontal spacing between items */
+  }
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Set the width of the button */
+    height: 50px; /* Set the height of the button */
+    border-radius: 50%; /* Make the button rounded */
+    background-color: white; /* Set the background color */
+    color: white; /* Set the icon color */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s; /* Add transition for hover effect */
+  }
+  
+  .social-icon {
+    font-size: 30px; /* Set the icon size */
+  }
+ 
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
   .copyright {
-    color: white;
+   
+    color: grey;
     font-size: 15px;
     text-align: center;
+<<<<<<< HEAD
+=======
+    margin-left: 20px;
+    margin-bottom: 10px;
+   
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
   }
 }

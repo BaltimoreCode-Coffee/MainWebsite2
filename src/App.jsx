@@ -16,6 +16,7 @@ function App() {
     <Router>
       <Navbar />
       <div className="content">
+<<<<<<< HEAD
       <Routes >
         <Route path="/" element={<HomeView />} />
         <Route path="/event-types" element={<EventTypes />} />
@@ -26,6 +27,19 @@ function App() {
       </Routes>
       </div>
       <Footer />
+=======
+        <Routes >
+          <Route path="/" element={<HomeView />} />
+          <Route path="/event-types" element={<EventTypes />} />
+          <Route path="/event-types/:tag?" element={<EventTypes />} />
+          <Route path="/event-calendar" element={<EventCalPage />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/volunteer" element={<Volunteer />} />
+        </Routes>
+      </div>
+      <Footer /> 
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
     </Router>
     </div>
   );

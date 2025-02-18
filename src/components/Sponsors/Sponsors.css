@@ -27,18 +27,46 @@
     gap: 20px;
     padding: 60px 0px;
 }
-.sponsors__partner-link{
-    color: #BCA9E9;
+.desktop-container .sponsors__partner-link {
+    color: var(--secondary-white);
     font-family: Raleway;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    text-decoration-line: underline;
+    text-decoration: none;
+    text-align: center;
+    
+    
+}
+
+
+.mobile-carousel{
+    display: none;
 }
 @media screen and (max-width: 1215px){
     .sponsors__tiles{
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 708px){
+    .mobile-carousel{
+      display: block;
+    }
+    .desktop-container{
+        display: none;
+    }
+    .sponsors{
+        display: flex;
+        align-items: center;
+    }
+    .sponsors h2,
+    .sponsors p{
+        font-size: 32px;
+    }
+    .sponsors p{
+        font-weight: 400;
+        text-align: left;
     }
 }
 @media screen and (max-width: 620px){

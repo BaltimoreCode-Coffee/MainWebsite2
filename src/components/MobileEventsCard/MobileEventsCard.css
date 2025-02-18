@@ -1,0 +1,35 @@
+.mobile-events-card h3{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 18px;
+    text-align: center;
+}
+.mobile-events-card img{
+    width: 100%;
+}
+.mobile-events-card .buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.mobile-events-card .buttons a{
+    color: #fff;
+    background-color: rgba(136,111,192, .55);
+    font-size: 14px;
+    font-family: var(--secondary-font);
+    height: 35px;
+    width: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 33px;
+}
+.carousel-section .mobile-carousel{
+    margin-bottom: 80px;
+}
+@media (max-width: 386px) {
+    .mobile-events-card .buttons a{
+        font-size: 12px;
+        width: 100px;
+    }
+}

@@ -27,6 +27,11 @@ const AboutUsCard = () => {
         <div className="about-us__img">
             <img src={cafeImg} alt="" />
         </div>
+        <div className="about-us__mobile-text-btn">
+            <button className="about-us__mobile-btn">
+                <div className="about-us__mobile-btn-text"><Link to={route_names.about_us}  style={{ textDecoration: 'none' ,color: 'inherit'}}>Learn More</Link></div>
+            </button>
+        </div>
     </div>
   )
 }

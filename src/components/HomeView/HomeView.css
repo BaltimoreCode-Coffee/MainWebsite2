@@ -8,6 +8,12 @@
     font-weight: 400;
     line-height: 30px;
     color: var(--primary-white);
+    margin-top: 20px;
+}
+
+.intro-section h1{
+    font-family: var(--primary-font);
+    font-size: 60px;
 }
 
 .background-img {

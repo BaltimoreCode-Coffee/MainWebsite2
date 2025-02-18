@@ -1,0 +1,116 @@
+/* Container just to demonstrate layout, not strictly necessary */
+.container {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
+    z-index: 10001 !important;
+  }
+ 
+  /* The side-menu navigation */
+  .container  .side-menu {
+    position: absolute;
+    margin-top: 21px;
+    right: -100%; ;/* Increased width for larger menu */
+    width: 100%;
+    height: 100vh;
+    background:radial-gradient(farthest-side, #4d046b 10%,#1f0834 110%);
+    color: white;
+    z-index: 10001 !important;
+    padding: 0; /* Remove padding */
+    transition: right 0.4s ease;
+  }
+
+  /* When open, slide it into view */
+  .side-menu.open {
+    position: fixed;
+    right: 0;
+    overflow-y: auto;
+    height: 100vh;
+    width: 100%;
+  }
+
+
+ 
+  /* Basic styling for menu items */
+  .side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10;
+    margin-top: 30px;
+
+  }
+  
+  .side-menu li {
+    padding: 20px 30px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 28px;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+    transition: background-color 0.4s ease;
+  }
+  
+  /* Style for disabled items */
+  .side-menu li[disabled] {
+    opacity: 0.7;
+    cursor: default;
+  }
+  
+  /* Style for items with icons */
+  .side-menu li img {
+    vertical-align: middle;
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.1;
+  }
+
+
+  .side-menu .social-list ul{
+    display: flex;
+    
+    justify-content: center; /* Center the items horizontally */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin-top: 0px; /* Remove default margin */
+    
+  }
+    /* remove underline on icons */
+  .side-menu .social-list li {
+    border-bottom: 0;
+    margin-top: 100px;
+    padding: 5px;
+
+  }
+
+  .side-menu  p{
+   margin-bottom: 200px;
+
+  }
+
+
+.side-menu .social-list .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px; /* Set the width of the button */
+  height: 42px; /* Set the height of the button */
+  border-radius: 50%; /* Make the button rounded */
+  background: rgba(184, 184, 184, 0.2);
+  color: rgb(195, 195, 195);
+  text-decoration: none; /* Remove underline from links */
+  transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+
+.container button {
+
+  background: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent; /* Removes tap highlight on iOS */
+  user-select: none; /* Prevents text/icon selection */
+  -webkit-touch-callout: none; /* Prevents callout on long-press */
+
+}
