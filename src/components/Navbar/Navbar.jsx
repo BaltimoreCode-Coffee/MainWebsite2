@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 // src/components/Navbar.jsx
 import "../DropdownMenu/DropdownMenu";
+=======
+// src/components/Navbar/Navbar.jsx
+>>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
 //import logo from "../../assets/BCC_logo.png";
 import logo from "../../assets/bcc-nav.png";
@@ -10,6 +14,7 @@ import route_names from "../../data_obj/RouteNames";
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import MobileSlidingMenu from "../MobileSlidingMenu/MobileSlidingMenu";
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -95,7 +100,7 @@ function Navbar() {
         </ul>
       )}
       {isMobileMenuOpen && (
-        <DropdownMenu
+        <MobileSlidingMenu
           buttonId="mobileNavEventsButton"
           menuId="mobileNavEventsMenu"
           buttonIcon={<HamburgerMenuIcon fontSize="large" />}
@@ -152,7 +157,7 @@ function Navbar() {
               },
             },
           ]}
-        ></DropdownMenu>
+        ></MobileSlidingMenu>
       )}
     </nav>
   );

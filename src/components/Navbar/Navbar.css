@@ -45,6 +45,7 @@
 #mobileNavEventsButton {
   color: #181818;
   text-transform: capitalize;
+  
 }
 
 .MuiButtonBase-root,
@@ -66,4 +67,11 @@
 
 .navbar__menu-icon {
   padding-right: 4px;
+}
+
+/* adjust thickness of hamburger lines*/
+.MuiSvgIcon-root[data-testid="MenuIcon"] {
+  stroke-width: 0.005px;
+  stroke: #181818; /* Maintains your current color */
+
 }

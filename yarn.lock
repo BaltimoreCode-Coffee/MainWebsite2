@@ -3133,13 +3133,6 @@
     "is-typed-array" "^1.1.13"
     "possible-typed-array-names" "^1.0.0"
 
-"uid@^2.0.2":
-  "integrity" "sha512-u3xV3X7uzvi5b1MncmZo3i2Aw222Zk1keqLA1YkHldREkAhAqi65wuPfe7lHx8H/Wzy+8CE7S7uS3jekIM5s8g=="
-  "resolved" "https://registry.npmjs.org/uid/-/uid-2.0.2.tgz"
-  "version" "2.0.2"
-  dependencies:
-    "@lukeed/csprng" "^1.0.0"
-
 "unbox-primitive@^1.0.2":
   "integrity" "sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw=="
   "resolved" "https://registry.npmjs.org/unbox-primitive/-/unbox-primitive-1.0.2.tgz"

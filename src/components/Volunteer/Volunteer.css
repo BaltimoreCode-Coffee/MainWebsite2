@@ -1,0 +1,156 @@
+.volunteer {
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: center;
+  
+    margin-top: 30px;
+    padding: 0 52px;
+}
+.volunteer h1 {
+    font-size: 60px;
+    line-height: 1;
+    padding:0%;
+
+   
+  
+}
+.volunteer_top {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 70%;
+
+    
+}
+
+.volunteer p{
+    margin-top: 0px;
+    font-family:var(--primary-font);
+    color: var(--primary-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.collage{
+    padding:1%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur( 0x );
+    -webkit-backdrop-filter: blur( 100px );
+    
+    max-width: 45%;
+}
+
+
+.volunteer_bottom{
+    padding-top: 50px;
+    max-width: 70%;
+}
+
+.volunteer button{
+    background-color: var(--primary-white);
+    color:var(--primary-purple);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    border-radius: 30px;
+    padding: 10px 40px;
+}
+
+@media (max-width: 900px) {
+    .volunteer h1 {
+        font-size: 60px;
+        line-height: 1;
+        padding:0%;
+    }
+    .volunteer p{
+        font-size: 25px;
+        line-height: 1;
+   
+        max-width: 100%;
+        
+      
+    }
+    .volunteer_bottom{
+        padding-top: 50px;
+       
+        
+    }
+    .collage{
+        padding:1.5%;
+        background-color: rgba(255, 255, 255, 0.3);
+        max-width: 68%;
+    }
+    
+
+    .volunteer button{
+        
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        border-radius: 30px;
+        padding: 8px 35px;
+     
+       
+    }
+}
+
+
+@media (max-width: 440px) {
+    .volunteer h1 {
+        font-size: 40px;
+        line-height: 1;
+        padding:0%;
+    }
+    .volunteer_top {
+        margin-top: 35px;
+        margin-bottom: 35px;
+      
+    
+        
+    }
+    .volunteer_bottom, .volunteer_top {
+        min-width: 300px;
+    }
+    .volunteer p{
+        font-size: 20px;
+        text-align: center;
+        align-content: center;
+        position: relative;
+        margin:0 auto;
+        width: 100%;
+        font-weight: 550; /* Add some bolding to compensate for eslightly smaller size*/
+       
+        
+      
+    }
+    .volunteer_bottom{
+        padding-top: 35px;
+       
+        
+    }
+    .collage{
+        padding:2.5%;
+        background-color: rgba(255, 255, 255, 0.3);
+        max-width: 98%;
+    }
+    
+
+    .volunteer button{
+        
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        border-radius: 30px;
+        padding: 8px 35px;
+    
+       
+    }
+}

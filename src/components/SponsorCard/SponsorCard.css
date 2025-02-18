@@ -1,5 +1,8 @@
 .sponsor-card{
-    background-color: var(--secondary-purple);
+    background: rgba(184, 184, 184, 0.16);
+    backdrop-filter: blur( x );
+    -webkit-backdrop-filter: blur( 100px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 30px 28px;
     border: 1px solid #412157;
     /* flex: 1;
