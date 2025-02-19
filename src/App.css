@@ -62,7 +62,6 @@ h2 {
   line-height: 44px;
 }
 
-/* prevents floating footer*/
 #root {
   display: flex;
   flex-direction: column;
@@ -72,4 +71,3 @@ h2 {
 .content{
   flex: 1 1 auto;
 }
-

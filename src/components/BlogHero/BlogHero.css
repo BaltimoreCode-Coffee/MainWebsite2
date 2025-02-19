@@ -1,0 +1,57 @@
+#blog-hero {
+  /* background-image: url('D:\Projects\Personal Projects\BCC\BCCFutureSite\src\assets\BlogPlaceholder.jpg');
+  background-size: cover;
+  background-position: center; */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+#highlight {
+  width: 1262px;
+  height: 739px;
+}
+
+
+.bloglink {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 80px;
+}
+
+.tag-container {
+  margin-top: 10px;
+}
+
+.tag {
+  font-size: 18px;
+  padding: 7px;
+  color: white;
+  background-color: purple;
+  border-radius: 5px;
+}
+
+#highlight-title {
+  font-size: 48px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+
+#highlight-tags {
+  margin-top: 30px;
+}

@@ -30,6 +30,15 @@
 
 .navbar__link {
   text-decoration: none;
+  color: #181818;
+}
+
+.navbar__link:hover {
+  color: purple;
+}
+
+.navbar__link:visited {
+  color: #181818;
 }
 
 #navEventsButton,

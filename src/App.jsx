@@ -16,6 +16,9 @@ function App() {
     <Router>
       <Navbar />
       <div className="content">
+
+  
+
         <Routes >
           <Route path="/" element={<HomeView />} />
           <Route path="/event-types" element={<EventTypes />} />
@@ -27,6 +30,7 @@ function App() {
         </Routes>
       </div>
       <Footer /> 
+
     </Router>
     </div>
   );
