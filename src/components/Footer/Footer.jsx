@@ -28,10 +28,6 @@ function Footer() {
   return (
     
     <footer>
-<<<<<<< HEAD
-=======
- 
->>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
       <section className="mini-footer">
         <div className="mini-footer-logo-container">
           <img
@@ -41,7 +37,6 @@ function Footer() {
           />
           </div>
         <div className="mini-footer-menu">
-<<<<<<< HEAD
           <ul>  
             <li>
               <Link to={route_names.events}>Events</Link>
@@ -50,18 +45,6 @@ function Footer() {
               <Link to={route_names.about_us}>About Us</Link>
             </li>
          
-=======
-          <ul>
-            <li>
-              <Link to={route_names.about_us}>About Us</Link>
-            </li>
-            <li>
-              <Link to={route_names.event_cal}>Event Calendar</Link>
-           </li>
-           <li>
-              <Link to={route_names.event_type}>Event Types</Link>
-           </li>
->>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
             <li>
               <Link to={route_names.volunteer}>Volunteer</Link>
             </li> 
@@ -129,23 +112,13 @@ function Footer() {
         </div>
         <div className="footer-links">
           <ul>
-<<<<<<< HEAD
             
-=======
-            <li>
-              <Link to={route_names.about_us}>About Us</Link>
-            </li>
->>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
             <li>
               <DropdownMenu
               className="footer-events"
                 buttonId="footerEventsButton"
                 menuId="footerEventsMenu"
-<<<<<<< HEAD
                 buttonTitle="Event"
-=======
-                buttonTitle="Events"
->>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
                 menuItems={[
                   {
                     name: "Type of Events",
@@ -163,12 +136,9 @@ function Footer() {
               />
             </li>
             <li>
-<<<<<<< HEAD
               <Link to={route_names.about_us}>About Us</Link>
             </li>
             <li>
-=======
->>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
               <Link to={route_names.blog}>Blog</Link>
             </li>
             <li>

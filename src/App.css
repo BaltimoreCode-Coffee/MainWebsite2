@@ -62,10 +62,6 @@ h2 {
   line-height: 44px;
 }
 
-<<<<<<< HEAD
-=======
-/* prevents floating footer*/
->>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
 #root {
   display: flex;
   flex-direction: column;
@@ -74,9 +70,4 @@ h2 {
 
 .content{
   flex: 1 1 auto;
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> d5f5ee31ff4f9307cf396ec93e74f3ea1721b9e8
