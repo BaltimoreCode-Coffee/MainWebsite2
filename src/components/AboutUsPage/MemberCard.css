@@ -1,0 +1,65 @@
+
+
+/* Profile link text */
+
+.member-info a {
+    color: rgba(214, 209, 209, 0.765); /* Sets the text color to white */
+    font-size: 20px;
+    font-family: var(--secondary-font);  
+
+
+  }
+  .member-profile {
+   margin-top: 2%;
+  }
+  
+
+
+  /* The seems to be some defualt/parent margin on this already,
+   negative percentage is temporary solution */
+
+  .member-role {
+    margin-top: -2%; 
+   }
+
+
+  .member-info a:hover{
+    color: lightgray; /* Changes color when hovered */
+  }
+
+  .member-info {
+    text-align:  left;
+    vertical-align: left;
+   
+
+  } 
+  .member-info .member-name{
+    margin-top: 2%;
+    font-size: 20px;
+    font-family: var(--secondary-font);
+
+  } 
+
+  .member-info .member-role {
+    
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+     
+    color: white;
+    font-family: var(--secondary-font);
+  } 
+
+ 
+
+  .member-card_img img {
+
+    width: 200px;
+    height: 200px; 
+    object-fit: cover; /* Ensures images scale properly */
+    border-radius: 5px;
+    vertical-align: top;
+
+  
+  }
+

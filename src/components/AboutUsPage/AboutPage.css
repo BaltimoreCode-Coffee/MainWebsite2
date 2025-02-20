@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 52px;
+}
+
+.about-us p {
+    font-family: var(--primary-font);
+    color: var(--primary-white);
+    display: flex;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.about-us_top {
+    margin-top: 50px;
+    max-width: 70%;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.contributor-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    flex-wrap: nowrap; 
+
+}
+
+.gallery-container .row-1, .gallery-container .row-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    height: 100%;
+ 
+   
+}
+
+.row-1 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.row-2 {
+  
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+/* Fix for the nested gal-items-container issue */
+.gallery-items-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Maximum of 3 items per row */
+    height: 100%;
+    
+    margin-bottom: 5%;
+  
+}
+
+
+/* Style for individual items
+
+Note: Styles were seperated for top and bottom rows 
+becuase there appears to be differnet defualt spacing on them */
+.gallery-item1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12%;
+    margin-top: 2%;
+   
+}
+.gallery-item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    margin-top: 2%;
+   
+}
+
+
+/* Ensure the images are consistent */
+.gallery-item1 img, .gallery-item2 img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.gallery-item1 a, .gallery-item2 a {
+    color: rgba(214, 209, 209, 0.765);
+}
+
+.gallery-item1 a:hover, .gallery-item2 a:hover {
+    color: lightgray;
+}
+
+.gallery-item2 .role {
+
+vertical-align: middle
+}
+
+/* Mobile View */
+@media (max-width: 770px) {
+    .about-us {
+        padding: 0 20px;
+    }
+    .gallery-items-container {
+        display: grid;
+        grid-template-columns: none; /* Maximum of 3 items per row */
+    
+    }
+
+
+    .gallery-item1 img, .gallery-item2 img {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    .row-1  {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: nowrap; 
+  
+       
+   }
+
+   .row-2  {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: nowrap; 
+        margin-bottom: 20%;
+   }
+ 
+
+}
+
+
