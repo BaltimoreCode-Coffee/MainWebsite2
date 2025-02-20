@@ -1,3 +1,9 @@
+#package and yarn
+#prevent updates from being committed
+#package.json
+#package-lock.json
+#yarn.lock
+
 # Logs
 logs
 *.log

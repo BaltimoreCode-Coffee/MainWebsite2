@@ -13,8 +13,8 @@ const AboutUsCard = () => {
                 <h1>Welcome to Code & Coffee</h1>
             </div>
             <div className="about-us__text-content">
-                <p>Code & Coffee is a place where people with passion for tech can come together, exchange ideas, & learn from one another. It’s a place that encourages cross-pollination between
-                    technologists of varied backgrounds leaving them with new ideas & doubled energy to be poured back into the community
+                <p style={{ color: 'black' }}>Code & Coffee is a place where people with passion for tech can come together, exchange ideas, & learn from one another. It’s a place that encourages cross-pollination between
+                    technologists of varied backgrounds leaving them with new ideas & doubled energy to be poured back into the community.
              </p>
             </div>
             <div className="about-us__text-btn">

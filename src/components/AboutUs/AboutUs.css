@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 52px;
+}
+
+.about-us p{
+    margin-top: 0px;
+    font-family:var(--primary-font);
+    color: var(--primary-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.about-us_top {
+    margin-top: 50px;
+    max-width: 70%;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.contributor-title{
+
+  text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+}
+  
+  .row-1 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    
+}
+
+  .row-1 .gallery-items-container {
+    display: flex; 
+    gap: 100px; /* Add spacing between gallery items */
+    justify-content: center; /* Center-align all gallery items */
+    margin-bottom: 140px;
+}
+
+
+   .namelink {
+    display: flex;          
+    flex-direction: column; 
+    align-items: flex-start; /* Align items to the left */
+
+   }
+
+   .namelink2 {
+    display: flex;          /* Enable flex container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-left: 60px;
+
+   }
+
+  .row-2 {
+    display: flex; 
+    flex-direction: column; /* Stack title and gallery grid vertically */
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+    background-color: rgba(255, 255, 255, 0.10);
+  }
+
+  .row-2 .gallery-items-container {
+    display: grid; /* Create a grid layout for gallery items */
+    grid-template-columns: repeat(3, 1fr); /* Maximum of 3 items per row */
+    margin-bottom: 140px;
+}
+  
+  .gallery-item1, .gallery-item2 {
+
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+  }
+    
+  .gallery-item1 img,.gallery-item2 img {
+    width: 200px;
+    height: 200px; 
+    object-fit: cover; /* Ensures images scale properly */
+    border-radius: 25px;
+
+  
+  }
+  
+  .name {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+   
+  .gallery-item1 a, .gallery-item2 a {
+    color: white; /* Sets the text color to white */
+  }
+  
+  .gallery-item1 a:hover,.gallery-item2 a:hover {
+    color: lightgray; /* Changes color when hovered */
+  }
+  
+  /* Mobile View*/
+  @media (max-width: 768px) {
+
+    .about-us {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 30px;
+      padding: 0 52px;
+    }
+    
+    /* Switch to horizontal scrolling for small screens */
+
+    .row-1 .gallery-items-container {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: nowrap; 
+        overflow-x:auto ;
+        gap: 1px;
+   }
+
+   .row-2 .gallery-items-container {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: nowrap; 
+        overflow-x:auto ;
+        gap :8 px;
+        margin-bottom: 35px;
+   }
+
+   .gallery-item1 img,.gallery-item2 img {
+    width: 150px;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 20px;
+ }
+
+  .namelink {
+    display: flex;          
+    flex-direction: column; 
+    align-items: flex-start; /* Align items to the left */
+    margin-right: 0px;
+
+ }
+
+ .namelink2 {
+  display: flex;          
+  flex-direction: column; 
+  align-items: flex-start; /* Align items to the left */
+  margin-left: -15px;
+
+}
+
+.gallery-item1, .gallery-item2 {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ .gallery-item1 a:hover,.gallery-item2 a:hover {
+  color: lightgray; /* Changes color when hovered 211 3*/
+}
+
+#jae-namelink{
+  margin-left:-68px;
+}
+
+#brice-namelink{
+  margin-left:-40px;
+}
+
+#mark-namelink{
+  margin-left:-57px;
+}
+
+#tanner-namelink{
+  margin-left:-57px;
+}
+
+#beza-namelink{
+  margin-left:-46px;
+}
+
+#brent-namelink{
+  margin-left:-33px;
+}
+
+.row-1 .gallery-items-container {
+  
+  margin-bottom: 10px;
+}
+
+  } 
+
+  
