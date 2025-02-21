@@ -28,18 +28,27 @@
     padding: 60px 0px;
 }
 .desktop-container .sponsors__partner-link {
+    display: flex;
+    
     color: var(--secondary-white);
     font-family: Raleway;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
-    text-decoration: none;
-    text-align: center;
-    
-    
+    line-height: normal;    
 }
 
+.sponsor_button{
+    background-color: rgba(184, 184, 184, 0.26);
+    line-height: 44px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.buttor_bar{
+    display: flex;
+    justify-content: center;
+}
 
 .mobile-carousel{
     display: none;

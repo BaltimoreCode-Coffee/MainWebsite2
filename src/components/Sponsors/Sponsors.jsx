@@ -44,9 +44,13 @@ function Sponsors() {
               return <SponsorCard sponsor={sponsor} key={sponsor.id} />;
             })}
           </div>
-          <a href="mailto:bmorecodecoffee@gmail.com" className="sponsors__partner-link">
-            Partner With Us
-          </a>
+          <div className="buttor_bar">
+            <button className="sponsor_button">
+              <a href="mailto:bmorecodecoffee@gmail.com" className="sponsors__partner-link">
+                Partner With Us
+              </a>
+            </button>
+          </div>
         </div>
       </div> 
 

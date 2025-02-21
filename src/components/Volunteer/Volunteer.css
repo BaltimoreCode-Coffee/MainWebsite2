@@ -1,26 +1,32 @@
 .volunteer {
     display: flex;
     flex-direction: column;
- 
     align-items: center;
   
     margin-top: 30px;
     padding: 0 52px;
 }
-.volunteer h1 {
+
+.volunteer_header{
+
+    min-width: 100%;
+    align-items: left;
+    border-bottom: 2px solid;
+    border-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 50px;
+}
+
+.volunteer_title h1 {    
+    align-items: left;
     font-size: 60px;
     line-height: 1;
     padding:0%;
-
-   
-  
 }
 .volunteer_top {
     margin-top: 50px;
     margin-bottom: 50px;
-    max-width: 70%;
-
-    
+    max-width: 70%;   
+    padding:0%;
 }
 
 .volunteer p{
@@ -28,9 +34,9 @@
     font-family:var(--primary-font);
     color: var(--primary-white);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -41,7 +47,6 @@
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur( 0x );
     -webkit-backdrop-filter: blur( 100px );
-    
     max-width: 45%;
 }
 
